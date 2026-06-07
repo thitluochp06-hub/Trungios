@@ -639,12 +639,227 @@ button:active {
         <div class="header">
             <img src="images/at.PNG" class="avatar">
             <div id="hung-typing" class="name">Trung IOS <i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></div>
-            <p class="description">
-    <span id="sub-text">🫰🫰Hoàng Đăng Trung🫰🫰</span>
-</p>
+         <!--   <p class="description">
+    <span id="sub-text">Tôi là Trung .<br> Đang sinh sống và làm việc tại Nhật Bản <br>đất nước mặt trời mọc</marquee> -->
+ 
+ <!-- Thêm Font chữ hiện đại từ Google Fonts -->
+        <link rel="preconnect" href="https://googleapis.com">
+        <link rel="preconnect" href="https://gstatic.com" crossorigin>
+        <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+        <p class="description" style="min-height: 24px; margin: 15px 0; text-align: center;">
+            <!-- Đoạn style dưới đây đã được đổi font chữ thành 'Montserrat' -->
+            <span id="typing-text" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #ffffff; font-size: 16px; border-right: 2px solid #38bdf8; padding-right: 5px; animation: blink 0.75s step-end infinite;"></span>
+        </p>
+
+        <style>
+            @keyframes blink { from, to { border-color: transparent } 50% { border-color: #38bdf8; } }
+        </style>
+
+        <script>
+            const words = [
+                "Tôi tên là Trung . Đang sinh sống và làm việc tại Nhật Bản đất nước mặt trời mọc ", 
+              <!-- "Hãy Liên Hệ Trực Tiếp Để Được Giúp Đỡ 💡" -->
+            ];
+            let i = 0;
+            let timer;
+
+            function typingEffect() {
+                let word = words[i].split("");
+                var loopTyping = function() {
+                    if (word.length > 0) {
+                        const el = document.getElementById('typing-text');
+                        if(el) el.innerHTML += word.shift();
+                    } else {
+                        setTimeout(deletingEffect, 2000);
+                        return false;
+                    }
+                    timer = setTimeout(loopTyping, 100);
+                };
+                loopTyping();
+            }
+
+            function deletingEffect() {
+                let word = words[i].split("");
+                var loopDeleting = function() {
+                    if (word.length > 0) {
+                        word.pop();
+                        const el = document.getElementById('typing-text');
+                        if(el) el.innerHTML = word.join("");
+                    } else {
+                        if (words.length > (i + 1)) { i++; } else { i = 0; }
+                        setTimeout(typingEffect, 500);
+                        return false;
+                    }
+                    timer = setTimeout(loopDeleting, 40);
+                };
+                loopDeleting();
+            }
+            setTimeout(typingEffect, 1000);
+        </script>
+              
+ 
+ 
+ 
+ 
+ 
+ 
+    <!--  </p>
             <p class="description">
     <span id="sub-text">Hãy Liên Hệ Trực Tiếp Để Được Giúp Đỡ</span>
-</p>
+</p> -->
+
+
+
+
+
+<!-- KHUNG PHÁT NHẠC THU NHỎ -->
+<div class="music-player-container">
+    <div class="music-info">
+        <span class="music-icon">🎵</span>
+        <div class="music-text">
+            <div class="music-title">COME MY WAY</div>
+            <div class="music-artist">Sơn Tùng MT-P & TYGA</div>
+        </div>
+    </div>
+    
+    <div class="music-controls">
+        <!-- Nút Phát / Tạm dừng -->
+        <button id="play-btn" onclick="togglePlay()">▶</button>
+        <!-- Thanh thời gian nhạc -->
+        <input type="range" id="seek-bar" value="0" max="100" onchange="changeSeekBar()">
+    </div>
+
+    <!-- Nhúng file nhạc của bạn vào đây -->
+    <!-- Bạn hãy thay link ở src bằng link file nhạc .mp3 của bạn nhé -->
+    <audio id="my-audio" src="mp3/come my Way Sơn tung mPT.mp3" autoplay></audio>
+</div>
+
+<!-- ĐOẠN CODE CSS ĐỂ LÀM KHUNG NHẠC ĐẸP MẮT -->
+<style>
+    .music-player-container {
+        max-width: 350px;
+        margin: 20px auto;
+        background: rgba(30, 41, 59, 0.7);
+        border: 1px solid rgba(56, 189, 248, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .music-info {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .music-icon {
+        font-size: 24px;
+        margin-right: 12px;
+        animation: rotateIcon 3s linear infinite;
+        animation-play-state: paused;
+    }
+    .music-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .music-title {
+        color: #38bdf8;
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .music-artist {
+        color: #94a3b8;
+        font-size: 12px;
+    }
+    .music-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    #play-btn {
+        background: #38bdf8;
+        border: none;
+        color: #0f172a;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+    #play-btn:hover {
+        transform: scale(1.1);
+        background: #0ea5e9;
+    }
+    #seek-bar {
+        flex-grow: 1;
+        accent-color: #38bdf8;
+        cursor: pointer;
+    }
+    @keyframes rotateIcon {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+</style>
+
+<!-- ĐOẠN CODE LỆNH ĐIỀU KHIỂN NHẠC -->
+<script>
+    const audio = document.getElementById('my-audio');
+    const playBtn = document.getElementById('play-btn');
+    const seekBar = document.getElementById('seek-bar');
+    const musicIcon = document.querySelector('.music-icon');
+
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            playBtn.innerHTML = "❚❚"; // Đổi thành nút tạm dừng
+            musicIcon.style.animationPlayState = 'running'; // Cho icon nốt nhạc xoay
+        } else {
+            audio.pause();
+            playBtn.innerHTML = "▶"; // Đổi thành nút phát
+            musicIcon.style.animationPlayState = 'paused'; // Dừng icon nốt nhạc
+        }
+    }
+
+    // Cập nhật thanh thời gian khi nhạc chạy
+    audio.addEventListener('timeupdate', () => {
+        // Tự động phát nhạc ngay khi người dùng click/chạm vào màn hình
+document.addEventListener('click', function() {
+    if (audio && audio.paused) {
+        audio.play().then(() => {
+            if(playBtn) playBtn.innerHTML = "❚❚";
+            if(musicIcon) musicIcon.style.animationPlayState = 'running';
+        }).catch(error => {
+            console.log("Trình duyệt chặn tự phát: ", error);
+        });
+    }
+}, { once: true });
+        const value = (audio.currentTime / audio.duration) * 100;
+        seekBar.value = value || 0;
+    });
+
+    // Tua nhạc khi kéo thanh thời gian
+    function changeSeekBar() {
+        const time = (seekBar.value / 100) * audio.duration;
+        audio.currentTime = time;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
 
         <div class="icon-row">
 
