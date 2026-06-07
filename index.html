@@ -801,12 +801,27 @@ button:active {
 
     <div class="app-item">
     <img src="images/a4.jpg" class="app-logo">
+    
     <div class="app-details">
-        <p class="app-name">KSign1<i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></p>
+        <p class="app-name">KSign1 <i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></p>
         <p class="update-text">Aramco Services Company</p>
     </div>
-    <a href="itms-services://?action=download-manifest&url=https://githubusercontent.com" class="btn-install">INSTALL</a>
-    </div>
+    
+    <!-- Nút bấm cải tiến: Bấm vào là gọi thẳng lệnh cài đặt iOS, không qua Link4M -->
+    <a href="https://api.khoindvn.io.vn/eQDb5c" onclick="installApp(event)" class="btn-install">INSTALL</a>
+</div>
+<script>
+function installApp(event) {
+    // Ngăn không cho trang web tự động chuyển hướng hoặc mở tab mới
+    event.preventDefault(); 
+    
+    // ĐƯỜNG DẪN ĐẦY ĐỦ: Điền chính xác link file .plist của bạn trên GitHub vào đây
+    var plistUrl = "https://githubusercontent.com";
+    
+    // Ép trình duyệt gọi giao thức hệ thống của Apple để hiện bảng cài đặt ngay lập tức
+    window.location.href = "itms-services://?action=download-manifest&url=" + encodeURIComponent(plistUrl);
+}
+</script>
 
     <div class="app-item">
     <img src="images/a4.jpg" class="app-logo">
