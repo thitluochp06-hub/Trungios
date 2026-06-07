@@ -830,16 +830,19 @@ button:active {
     // Cập nhật thanh thời gian khi nhạc chạy
     audio.addEventListener('timeupdate', () => {
         // Tự động phát nhạc ngay khi người dùng click/chạm vào màn hình
-document.addEventListener('click', function() {
-    if (audio && audio.paused) {
-        audio.play().then(() => {
-            if(playBtn) playBtn.innerHTML = "❚❚";
-            if(musicIcon) musicIcon.style.animationPlayState = 'running';
-        }).catch(error => {
-            console.log("Trình duyệt chặn tự phát: ", error);
-        });
+document.addEventListener('click', () => {
+    // 1. Ép trình duyệt load lại file nhạc từ ổ cứng ngay khi người dùng chạm vào web
+    if (audio.src.includes('file:///')) {
+        audio.load(); 
+    }
+    
+    // 2. Mở âm thanh và phát nhạc
+    audio.muted = false;
+    if (audio.paused) {
+        togglePlay();
     }
 }, { once: true });
+
         const value = (audio.currentTime / audio.duration) * 100;
         seekBar.value = value || 0;
     });
