@@ -658,7 +658,7 @@ button:active {
 
         <script>
             const words = [
-                "Tôi tên là Trung . Đang sinh sống và làm việc tại Nhật Bản đất nước mặt trời mọc ", 
+                "Tôi tên là Trung . Đang sinh sống và làm việc tại Nhật Bản đất nước mặt trời mọc!!! ", 
               <!-- "Hãy Liên Hệ Trực Tiếp Để Được Giúp Đỡ 💡" -->
             ];
             let i = 0;
@@ -732,7 +732,7 @@ button:active {
 
     <!-- Nhúng file nhạc của bạn vào đây -->
     <!-- Bạn hãy thay link ở src bằng link file nhạc .mp3 của bạn nhé -->
-    <audio id="my-audio" src="mp3/come-my-way.mp3" autoplay></audio>
+    <audio id="my-audio" src="http://zing.vn" autoplay muted loop></audio>
 </div>
 
 <!-- ĐOẠN CODE CSS ĐỂ LÀM KHUNG NHẠC ĐẸP MẮT -->
@@ -846,6 +846,12 @@ document.addEventListener('click', () => {
         const value = (audio.currentTime / audio.duration) * 100;
         seekBar.value = value || 0;
     });
+
+
+
+
+
+
 
     // Tua nhạc khi kéo thanh thời gian
     function changeSeekBar() {
