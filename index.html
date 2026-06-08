@@ -640,26 +640,29 @@ button:active {
        <div class="container">
         <div class="header">
             <img src="images/at.PNG" class="avatar">
-            <div id="hung-typing" class="name">Hoàng Trung <i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></div>
+            <div id="hung-typing" class="name">Hoàng Đăng Trung <i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></div>
          <!--   <p class="description">
     <span id="sub-text">Tôi là Trung .<br> Đang sinh sống và làm việc tại Nhật Bản <br>đất nước mặt trời mọc</marquee> -->
  
- <!-- Thêm Font chữ hiện đại từ Google Fonts -->
-        <link rel="preconnect" href="https://googleapis.com">
-        <link rel="preconnect" href="https://gstatic.com" crossorigin>
-        <link href="https://googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+      
+ <!-- Thêm Font chữ thư pháp từ Google Fonts -->
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 
-        <p class="description" style="min-height: 24px; margin: 15px 0; text-align: center;">
-            <!-- Đoạn style dưới đây đã được đổi font chữ thành 'Montserrat' -->
-            <span id="typing-text" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #ffffff; font-size: 16px; border-right: 2px solid #38bdf8; padding-right: 5px; animation: blink 0.75s step-end infinite;"></span>
-        </p>
-
+<p class="description" style="min-height: 24px; margin: 15px 0; text-align: center;">
+    <span id="typing-text" style="font-family: 'Dancing Script', cursive; font-size: 22px; font-weight: 700; color: #ffffff;">
 
 
 
-        <!-- DÒNG CHỮ CỐ ĐỊNH Ở GÓC TRÁI - NGANG HÀNG AVATAR -->
 <div class="text-avatar-left">
-    Profile của tôi!!!
+    <!-- Dòng chữ chào mừng cũ của bạn 
+          'Đừng bấm vào đây'             tạm thời k dùng -->  
+    
+    <!-- NÚT BẤM CHUYỂN LINK (Bạn dán thêm dòng này vào dưới chữ) -->
+     <a href="https://www.facebook.com/conixx1.Trung" target="_blank" class="icon-item">
+        <i class="fa-brands fa-telegram" style="color: #1e9884;"></i>
+    </a>
 </div>
 
 <style>
@@ -676,7 +679,8 @@ button:active {
         /* Định dạng kiểu chữ và màu sắc */
         color: #ffffff;  /* Màu chữ trắng nổi bật trên nền tối */
         font-size: 14px; /* Kích thước chữ vừa vặn */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-family: 'Dancing Script', cursive;
+font-size: 22px; /* Tăng cỡ chữ lên một chút vì chữ thư pháp nét khá mảnh */
         font-weight: 500;
         
         /* Tạo khung nền mờ bo góc nhẹ nhàng cho chữ dễ đọc */
@@ -706,8 +710,8 @@ button:active {
 
         <script>
             const words = [
-                "Tôi tên là Trung . Đang sinh sống và làm việc tại Nhật Bản đất nước mặt trời mọc!!! ", 
-              <!-- "Hãy Liên Hệ Trực Tiếp Để Được Giúp Đỡ 💡" -->
+                "Chuyên lập trình và thiết kế website.", 
+                   "Hãy Liên Hệ Trực Tiếp Với Tôi."
             ];
             let i = 0;
             let timer;
