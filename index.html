@@ -633,6 +633,8 @@ button:active {
         <a href="ipa-app.html"style="display:none;">IPA APP</a>                        <!--thêm style="display:none;" để ản tạm thời xóaddi là hiện trên web-->
         <a href="capcut.html">CAPCUT PRO</a>                                           <!---Viết như dòng này để hiện-->
     </div>
+    
+
 </nav>
 
        <div class="container">
@@ -651,6 +653,52 @@ button:active {
             <!-- Đoạn style dưới đây đã được đổi font chữ thành 'Montserrat' -->
             <span id="typing-text" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #ffffff; font-size: 16px; border-right: 2px solid #38bdf8; padding-right: 5px; animation: blink 0.75s step-end infinite;"></span>
         </p>
+
+
+
+
+        <!-- DÒNG CHỮ CỐ ĐỊNH Ở GÓC TRÁI - NGANG HÀNG AVATAR -->
+<div class="text-avatar-left">
+    Profile của tôi!!!
+</div>
+
+<style>
+    .text-avatar-left {
+        position: fixed;
+        /* Ghim khoảng cách tính từ đỉnh màn hình xuống để ngang hàng với avatar */
+        top: 55%;        
+        /* Đẩy sang sát lề bên TRÁI màn hình */
+        left: 30px;      
+        
+        /* Giữ cho dòng chữ tự động căn giữa theo chiều dọc chuẩn xác */
+        transform: translateY(-50%); 
+        
+        /* Định dạng kiểu chữ và màu sắc */
+        color: #ffffff;  /* Màu chữ trắng nổi bật trên nền tối */
+        font-size: 14px; /* Kích thước chữ vừa vặn */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        
+        /* Tạo khung nền mờ bo góc nhẹ nhàng cho chữ dễ đọc */
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(5px); /* Hiệu ứng kính mờ thời thượng */
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        
+        z-index: 99999;  /* Luôn nổi lên trên cùng, không bị nền đè */
+        pointer-events: none; /* Người dùng có thể click xuyên qua dòng chữ nếu bị vướng */
+        white-space: nowrap;  /* Ép dòng chữ luôn nằm trên 1 hàng ngang, không bị xuống dòng */
+    }
+</style>
+
+
+
+
+
+
+
+        
 
         <style>
             @keyframes blink { from, to { border-color: transparent } 50% { border-color: #38bdf8; } }
@@ -854,10 +902,17 @@ button:active {
         });
     </script>
     <!-- ======================================================== -->
-        <div class="icon-row">
+   
+   
+   
+   
+   
+   
+   
+    <div class="icon-row">
 
     <a href="https://www.facebook.com/conixx1.Trung" target="_blank" class="icon-item">
-        <i class="fa-brands fa-telegram" style="color: #26A5E4;"></i>
+        <i class="fa-brands fa-facebook" style="color: #26A5E4;"></i>
     </a>
 
     <a href="https://www.tiktok.com/@trungguitarist" target="_blank" class="icon-item">
@@ -869,6 +924,8 @@ button:active {
     </a>
 </div>
 
+
+<!--
         <div id="download-section" class="download-card">
             <div class="download-item">
                 <h4>Chưa Code lại loading...</h4>
@@ -1089,6 +1146,7 @@ button:active {
     </div>
     <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
     </div>
+-->
     
     </div>
         <div id="skill-section" class="skill-item">
