@@ -124,6 +124,7 @@ Write to Mất Cả Tên
     .menu-toggle {
         display: flex; /* Hiện nút 3 gạch khi màn hình nhỏ */
     }
+
     .nav-links {
         display: none; /* Ẩn menu ngang */
         flex-direction: column;
@@ -135,10 +136,21 @@ Write to Mất Cả Tên
         padding: 20px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
+
     .nav-links.show {
         display: flex; /* Hiện lại thành hàng dọc khi bấm nút */
     }
+
+    .navbar {
+        display: flex !important;
+        justify-content: space-between !important; /* ĐẨY CHỮ SANG TRÁI, NÚT SANG PHẢI */
+        align-items: center !important;
+        width: 100% !important;
+        padding: 10px 20px !important;
+        box-sizing: border-box !important;
+    }
 }
+
 .navbar {
     display: flex !important;
     justify-content: flex-start !important;
@@ -488,7 +500,63 @@ Write to Mất Cả Tên
     }
 }
 
+/* ĐOẠN CSS RESET TOÀN BỘ LỖI LỆCH TRÊN MÀN HÌNH NHỎ */
+@media (max-width: 768px) {
+    /* Đảm bảo khung bao ngoài cùng không bị tràn lề */
+    body, html {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        overflow-x: hidden !important; /* Triệt tiêu cuộn ngang gây lệch */
+    }
 
+    /* ÉP KHUNG CONTAINER VÀO CHÍNH GIỮA MÀN HÌNH */
+    .container {
+        display: flex !important;
+        flex-direction: column !important; /* Xếp dọc nội dung */
+        align-items: center !important;    /* Căn giữa chữ và ảnh */
+        justify-content: center !important;
+        
+        /* Bộ ba thuộc tính giải quyết lỗi lệch trái */
+        position: relative !important;     /* Reset nếu lỡ dùng absolute */
+        left: 0 !important;                /* Xóa bỏ khoảng cách lề trái cũ */
+        margin: 40px auto !important;      /* Tự động chia đều khoảng cách trái/phải */
+        
+        width: 90% !important;             /* Rộng vừa vặn 90% màn hình thiết bị */
+        max-width: 450px !important;       
+        padding: 20px !important;          
+        box-sizing: border-box !important;
+        transform: none !important;        /* Xóa bỏ các hiệu ứng dịch chuyển nếu có */
+    }
+
+    /* Căn giữa phần chữ */
+    .content-left {
+        width: 100% !important;
+        text-align: center !important;     
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 25px !important;    
+    }
+
+    /* Căn giữa phần ảnh */
+    .image-right {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+    }
+
+    /* Đảm bảo ảnh không bị to quá làm tràn khung */
+    .image-right img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+}
 
 
 
