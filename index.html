@@ -413,6 +413,87 @@ Write to Mất Cả Tên
         -ms-user-select: none;       /* Internet Explorer/Edge */
         user-select: none;           /* Bản chuẩn */
     }
+
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Bắt buộc phải thêm dòng này để thanh menu không bị co rúm */
+    .navbar {
+        width: 100%;
+    }
+
+    /* BẢN CHUẨN: Bạn hãy thay .profile-container bằng tên class bạn vừa tìm ở Bước 1 nhé */
+    .profile-container {
+        margin: 20px auto !important; /* Đẩy khung vào giữa màn hình */
+        width: 90% !important;        /* Giúp khung co dãn vừa màn hình điện thoại */
+        max-width: 450px;             /* Giới hạn độ rộng tối đa cho đẹp */
+    }
+}
+
+
+/* ĐOẠN CSS CHUẨN ĐƯA KHUNG VÀO GIỮA TRÊN ĐIỆN THOẠI */
+@media (max-width: 768px) {
+    /* Đảm bảo nền không bị lệch */
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Ép khung trắng lớn vào chính giữa màn hình */
+    .container {
+        display: flex !important;
+        flex-direction: column !important; /* Xếp dọc chữ trên ảnh dưới */
+        align-items: center !important;    /* Căn giữa nội dung bên trong */
+        justify-content: center !important;
+        margin: 40px auto !important;      /* Căn giữa bản thân chiếc khung */
+        width: 90% !important;             /* Rộng vừa vặn màn hình */
+        max-width: 450px !important;       /* Giới hạn độ rộng tối đa */
+        padding: 20px !important;          /* Tạo khoảng cách bên trong khung */
+        box-sizing: border-box !important;
+    }
+
+    /* Căn giữa phần chữ bên trái cũ */
+    .content-left {
+        width: 100% !important;
+        text-align: center !important;     /* Căn giữa toàn bộ chữ */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-bottom: 20px !important;    /* Tạo khoảng cách với ảnh bên dưới */
+    }
+
+    /* Căn giữa phần ảnh bên phải cũ */
+    .image-right {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* Đảm bảo ảnh co giãn vừa vặn, không bị tràn */
+    .image-right img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+
+
+
+
+
+
+
 </style>
 
 
