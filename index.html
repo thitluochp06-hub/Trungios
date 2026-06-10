@@ -504,8 +504,8 @@ form button:hover {
         
         <!-- Cột bên trái: Chữ -->
         <div class="content-left">
-            <div class="tagline">Xin Chào</div>
-            <h1>Profile của Trung<br><br></h1> <!-- viết trong br để thêm-->
+            <div class="tagline">Xin Chào Các Bạn Đã Ghé Thăm</div>
+            <h1>Đây Là Profile của TÔI<br><br></h1> <!-- viết trong br để thêm-->
               
             
             
@@ -514,7 +514,30 @@ form button:hover {
             <!-- Thay link ảnh của bạn vào phần src bên dưới -->
             <img src="images/a6.PNG" alt="Apple Design" width="250"> <!--đây là dòng ảnh và kích thước ảnh -->
         </div>
-            <p>Họ tên:<br>Quê Quán:<br>Sinh Ngày:<br> Sở Thích:</p>
+            <div class="profile-info-container">
+    <h2 class="profile-title">Thông Tin Cá Nhân</h2>
+    
+    <div class="info-item">
+        <span class="info-label"> Họ tên:</span>
+        <span class="info-value">Nguyễn Văn A</span>
+    </div>
+    
+    <div class="info-item">
+        <span class="info-label"> Quê Quán:</span>
+        <span class="info-value">Hải Phòng, Việt Nam</span>
+    </div>
+    
+    <div class="info-item">
+        <span class="info-label"> Sinh Ngày:</span>
+        <span class="info-value">01/01/00</span>
+    </div>
+    
+    <div class="info-item">
+        <span class="info-label"> Sở Thích:</span>
+        <span class="info-value">Đá bóng, Lập trình, Nghe nhạc<br>Đặc biệt là tìm Phú Bà</span>
+    </div>
+</div>
+
             <a href="ipa.html" class="cta-button">IPA MOD</a>
              <!--<a href="#" class="cta-button">...</a>
               <a href="#" class="cta-button">...</a>     -->
@@ -753,7 +776,52 @@ form button:hover {
     }
 }
 
+/* Khung bọc toàn bộ phần chữ */
+.profile-info-container {
+    text-align: left;         /* Căn lề trái toàn bộ chữ */
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ hiện đại */
+}
 
+/* Hiệu ứng chữ tiêu đề lớn lung linh */
+.profile-title {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    /* Hiệu ứng chữ đổi màu Gradient từ xanh sang tím */
+    background: linear-gradient(45deg, #696e74, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Từng dòng thông tin */
+.info-item {
+    margin-bottom: 18px;      /* Tạo khoảng cách giữa các dòng */
+    font-size: 16px;
+    border-bottom: 1px dashed #ececec; /* Đường gạch chân mờ tạo điểm nhấn */
+    padding-bottom: 8px;
+    transition: all 0.3s ease; /* Hiệu ứng mượt mà khi di chuột */
+}
+
+/* Hiệu ứng khẽ nhích sang phải khi di chuột vào dòng chữ */
+.info-item:hover {
+    padding-left: 8px;
+    border-bottom-color: #007bff;
+}
+
+/* Phần tiêu đề mục (Họ tên, Quê quán...) */
+.info-label {
+    font-weight: bold;
+    color: #333333;
+    margin-right: 10px;
+}
+
+/* Phần nội dung điền vào */
+.info-value {
+    color: #666666;
+    font-weight: 400;
+}
 
 
 </style>
