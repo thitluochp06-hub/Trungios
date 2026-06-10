@@ -14,7 +14,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Inter", sans-serif;
-            background-color: #0c0c0c; 
+            background-color: #a29e9e; 
             color: #e7e7f6; 
             display: block;
             min-height: 100vh;
@@ -208,10 +208,7 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ cho khung nổi bật */
     margin: 120px auto 50px auto; /* Đẩy cả cái khung này xuống dưới, cách thanh menu kính mờ */
 }
-Sent
-Compose
-Write to Mất Cả Tên
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         /* Khối nội dung chữ bên trái */
         .content-left {
@@ -327,8 +324,6 @@ Write to Mất Cả Tên
 .copyright-footer:hover {
     color: rgba(166, 2, 181, 0.9) !important; 
 }
-
-        
     </style>
   
 
@@ -559,9 +554,20 @@ Write to Mất Cả Tên
 
 
 
-
 </style>
+<script>
+  // Chặn phóng to khi chạm nhanh hai lần (double tap)
+  document.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1) {
+      event.preventDefault();
+    }
+  }, { passive: false });
 
+  // Chặn phóng to khi dùng hai ngón tay kéo (pinch zoom)
+  document.addEventListener('gesturestart', function (event) {
+    event.preventDefault();
+  });
+</script>
 
 
 
