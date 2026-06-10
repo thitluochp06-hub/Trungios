@@ -42,7 +42,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", "Inter", sans-serif;
             background-color: #a29e9e; 
-            color: #e7e7f6; 
+            color: #535378; 
             display: block;
             min-height: 100vh;
             overflow-x: hidden; /* Đổi thành overflow-x để cuộn dọc nếu nội dung dài */
@@ -101,7 +101,7 @@
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #665858;
 }
 
 /* Danh sách menu */
@@ -115,7 +115,7 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: #ffffff; /* Màu chữ xám nhẹ */
+    color: #534949; /* Màu chữ xám nhẹ */
     font-size: 16px;
     padding: 8px 16px;
     transition: 0.3s;
@@ -229,8 +229,8 @@
     width: 100%;
 
     /* THÊM 5 DÒNG NÀY VÀO ĐÂY ĐỂ ĐÓNG KHUNG VÀ BO CẠNH */
-    background-color: #ffffff;    /* Đổi nền thành màu trắng */
-    border: 1px solid #e5e5e7;    /* Tạo đường viền khung màu xám mảnh */
+    background-color: #efe8e8;    /* Đổi nền thành màu trắng */
+    border: 1px solid #000000;    /* Tạo đường viền khung màu xám mảnh */
     border-radius: 24px;          /* Hiệu ứng bo tròn cạnh */
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ cho khung nổi bật */
     margin: 120px auto 50px auto; /* Đẩy cả cái khung này xuống dưới, cách thanh menu kính mờ */
@@ -266,8 +266,8 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            color: #3f04f2; 
-            margin-bottom: 12px;
+            color: #606e79; 
+            margin-bottom: 20px;
             margin-top:-10; /* càng âm càng lên*/
         }
 
@@ -319,7 +319,7 @@
     gap: 40px;              
 }
             .content-left {
-                text-align: center; /* Căn giữa chữ lại khi xem trên điện thoại */
+                text-align: left; /* Căn giữa chữ lại khi xem trên điện thoại */
             }
             h1 {
                 font-size: 40px; /* Thu nhỏ chữ một chút trên màn hình nhỏ */
@@ -394,20 +394,24 @@
         
         <!-- Cột bên trái: Chữ -->
         <div class="content-left">
-            <div class="tagline">Xin Chào.</div>
+            <div class="tagline">Xin Chào</div>
             <h1>Profile của Trung<br><br></h1> <!-- viết trong br để thêm-->
+              
+            
+            
+            <!-- Cột bên phải: Ảnh -->
+        <div class="image-right">
+            <!-- Thay link ảnh của bạn vào phần src bên dưới -->
+            <img src="images/a6.PNG" alt="Apple Design" width="250"> <!--đây là dòng ảnh và kích thước ảnh -->
+        </div>
             <p>Họ tên:<br>Quê Quán:<br>Sinh Ngày:<br> Sở Thích:</p>
-            <a href="#" class="cta-button">Trải nghiệm ngay</a>
+            <a href="ipa.html" class="cta-button">IPA MOD</a>
              <a href="#" class="cta-button">...</a>
               <a href="#" class="cta-button">...</a>
         </div>
         
 
-        <!-- Cột bên phải: Ảnh -->
-        <div class="image-right">
-            <!-- Thay link ảnh của bạn vào phần src bên dưới -->
-            <img src="images/a6.PNG" alt="Apple Design" width="250"> <!--đây là dòng ảnh và kích thước ảnh -->
-        </div>
+
 
     </div>
 
@@ -657,7 +661,14 @@
     event.preventDefault();
   });
 </script>
-
+<script>
+  function toggleMenu() {
+      // Tìm thanh menu qua ID navLinks
+      var nav = document.getElementById("navLinks");
+      // Bật/tắt class "show" để ẩn hiện menu
+      nav.classList.toggle("show");
+  }
+</script>
 
 
 </body>
