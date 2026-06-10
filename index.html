@@ -286,10 +286,11 @@
         /* 4. TỰ ĐỘNG CÂN CHỈNH TRÊN ĐIỆN THOẠI (RESPONSIVE) */
         @media (max-width: 768px) {
             .container {
-                flex-direction: column; /* Chuyển thành 1 cột dọc */
-                text-align: center;
-                gap: 40px;
-            }
+    flex-direction: column; /* Giữ nguyên dòng này */
+    align-items: center;    /* THÊM DÒNG NÀY ĐỂ CĂN GIỮA TRÊN ĐIỆN THOẠI */
+    text-align: center;     
+    gap: 40px;              
+}
             .content-left {
                 text-align: center; /* Căn giữa chữ lại khi xem trên điện thoại */
             }
