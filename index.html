@@ -135,6 +135,15 @@
     flex-direction: column;
     cursor: pointer;
     gap: 4px;
+/* Nút 3 gạch - Cho nó đứng tách biệt ở góc trái */
+.menu-toggle {
+    position: absolute !important;
+    left: 20px !important;
+    color: #a1a1a6 !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+}
+    
 }
 
 .menu-toggle span {
@@ -352,7 +361,108 @@
 .copyright-footer:hover {
     color: rgba(166, 2, 181, 0.9) !important; 
 }
-    </style>
+  
+  /* Khung bọc toàn bộ nội dung chữ bên trong card */
+.contact-content {
+    padding: 20px;
+    max-width: 600px; /* Giới hạn độ rộng để dòng chữ không bị quá dài */
+    margin: 0 auto;   /* Căn giữa cả khối nội dung */
+}
+
+/* Tiêu đề chính lớn nhất "Liên hệ với tôi" */
+.contact-content h2 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center; /* Tiêu đề ngắn để căn giữa đẹp */
+}
+
+/* Các đoạn văn mô tả dài */
+.contact-content p {
+    text-align: left;       /* Căn lề trái giúp đọc văn bản dài tự nhiên hơn */
+    line-height: 1.900;       /* Tăng khoảng cách dòng cho chữ dễ đọc, không bị dính */
+    color: #555555;         /* Màu chữ xám đậm dịu mắt hơn màu đen tuyền */
+    font-size: 15px;
+    margin-bottom: 25px;    /* Tạo khoảng cách với phần phía dưới */
+}
+
+/* Các tiêu đề nhỏ như "Hãy kết nối với tôi", "Email", "Điện thoại" */
+.contact-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;         /* Sử dụng lại tông màu xanh chủ đạo của bạn */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;     /* Giữ căn giữa cho các tiêu đề mục ngắn này */
+}
+
+  /* Khung bọc toàn bộ form nhập liệu */
+form {
+    max-width: 500px;        /* Giới hạn độ rộng của form cho đẹp */
+    margin: 30px auto 0 auto; /* Căn giữa form và tạo khoảng cách với phần trên */
+    padding: 0 20px;         /* Khoảng cách thụt lề 2 bên */
+    text-align: left;        /* BẮT BUỘC: Chuyển toàn bộ chữ trong form về lề trái */
+}
+
+/* Định dạng cho các khối chứa từng ô nhập (nếu có thẻ div bọc ngoài) */
+form div, .form-group {
+    display: flex;
+    flex-direction: column;  /* Ép nhãn chữ nằm TRÊN, ô nhập nằm DƯỚI */
+    align-items: flex-start; /* Căn đều về bên trái */
+    margin-bottom: 15px;     /* Khoảng cách giữa các ô */
+}
+
+/* Định dạng nhãn chữ (Họ và tên, Email, Chủ đề, Nội dung) */
+form label {
+    display: block;          /* Biến thành khối riêng để tự xuống dòng */
+    margin-bottom: 5px;      /* Khoảng cách từ chữ đến ô vuông */
+    font-weight: 600;        /* Làm chữ đậm lên cho rõ ràng */
+    color: #444444;          /* Màu xám đậm chuyên nghiệp */
+    font-size: 14px;
+}
+
+/* Định dạng các ô vuông nhập liệu (Input và Textarea) */
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+    width: 100%;             /* Kéo dài ô vuông chiếm hết chiều rộng của form */
+    box-sizing: border-box;  /* Giữ ô không bị tràn viền */
+    padding: 12px;           /* Tạo khoảng trống bên trong để dễ gõ chữ */
+    background-color: #ffffff; /* Nền trắng hoàn toàn để nổi bật */
+    border: 1px solid #cccccc; /* Viền mỏng màu xám rõ nét */
+    border-radius: 6px;      /* Bo góc nhẹ cho mềm mại */
+    font-size: 14px;
+}
+
+/* Hiệu ứng khi bấm chuột vào ô để gõ */
+form input:focus, 
+form textarea:focus {
+    border-color: #007bff;   /* Đổi viền sang màu xanh dương chủ đạo */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Định dạng riêng cho nút "Gửi tin nhắn" */
+form button, form input[type="submit"] {
+    display: block;
+    width: 100%;             /* Nút bấm dài bằng các ô nhập luôn cho cân đối */
+    padding: 12px;
+    background-color: #007bff; /* Màu xanh dương giống nút Trải nghiệm ngay */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Tối màu đi một chút khi di chuột vào */
+}
+  
+  
+  </style>
   
 
 </head>
@@ -406,8 +516,8 @@
         </div>
             <p>Họ tên:<br>Quê Quán:<br>Sinh Ngày:<br> Sở Thích:</p>
             <a href="ipa.html" class="cta-button">IPA MOD</a>
-             <a href="#" class="cta-button">...</a>
-              <a href="#" class="cta-button">...</a>
+             <!--<a href="#" class="cta-button">...</a>
+              <a href="#" class="cta-button">...</a>     -->
         </div>
         
 
@@ -429,7 +539,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="/cdn-cgi/l/email-protection#68035a5846060100280f05090104460b0705"><span class="__cf_email__" data-cfemail="cba0f9fbe5a5a2a38baca6aaa2a7e5a8a4a6">[email&#160;protected]</span></a></p>
+                            <p><a href="nhập enail"><span class="__cf_email__" data-cfemail="cba0f9fbe5a5a2a38baca6aaa2a7e5a8a4a6">[email&#160;protected]</span></a></p>
                         </div>
                     </div>
 
