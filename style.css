@@ -851,12 +851,19 @@ footer {
 }
 
 .footer-social {
+ justify-content: center
+ align-iteam:center
+  margin-right: 100px;
   display: flex;
   gap: 0.75rem;
 }
 
 .footer-social a {
-  color: var(--text-secondary);
+  text-align: center;
+  margin-right: 20px;
+  width: 36px;
+  height: 36px;
+
   transition:
     color var(--duration-normal) var(--ease-out),
     transform var(--duration-normal) var(--ease-smooth);
@@ -865,6 +872,15 @@ footer {
 .footer-social a:hover {
   color: var(--blue);
   transform: translateY(-2px);
+}
+
+.social-icons{
+display: block; 
+margin: auto;
+margin-top: 15px;
+color: #2a2a34;
+font-size: 20px;
+
 }
 
 .fade-in {
