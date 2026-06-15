@@ -52,34 +52,37 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/8089/8089999.png">
   </head>
   <body>
-    <!-- Navigation -->
-    <nav id="navbar" class="app-header">
-      <div class="nav-container scroll-reveal">
+   
+<!-- Navigation -->
+<nav id="navbar" class="app-header">
+    <div class="nav-container scroll-reveal">
         <div class="nav-top">
-          <div class="logo">TrungTiger </div>
-          <ul class="platform-tabs">
-            <li><a href="#home" class="active">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#skills">Kỹ năng</a></li>
-            <li><a href="#projects">Dự án</a></li>
-            <li><a href="#ios-tools">iOS Tools</a></li>
-            <li><a href="#achievements">Thành tích</a></li>
-            <li><a href="#contact">Liên hệ</a></li>
-          </ul>
-          <div class="mobile-menu" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+            <div class="logo">TrungTiger</div>
+            <ul class="platform-tabs">
+                <li><a href="#home" class="active">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#ios-tools">iOS Tools</a></li>
+                <li><a href="#achievements">Thành tích</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            
+           <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Mobile Menu Modal (Outside navbar for proper z-index stacking) -->
-    <div class="nav-bottom" id="navMenu scroll-reveal">
-      <ul class="nav-links scroll-reveal">
+<!-- Mobile Menu Modal (Outside navbar for proper z-index stacking) -->
+<div class="nav-bottom" id="navMenu">
+    <ul class="nav-links scroll-reveal">
         <li><a href="#home" class="active">Trang chủ</a></li>
         <li><a href="#about">Giới thiệu</a></li>
         <li><a href="#skills">Kỹ năng</a></li>
@@ -87,8 +90,8 @@
         <li><a href="#ios-tools">iOS Tools</a></li>
         <li><a href="#achievements">Thành tích</a></li>
         <li><a href="#contact">Liên hệ</a></li>
-      </ul>
-    </div>
+    </ul>
+</div>
 
     <!-- Hero Section -->
     <section id="home" class="hero scroll-reveal" >
@@ -121,7 +124,7 @@
             </p>
             <div class="hero-buttons">
               <a href="#projects" class="btn btn-primary">Khám phá dự án</a>
-              <a href="/ipa.html" class="btn btn-secondary">Ứng dụng Mod</a>
+              <a href="#ios-tools" class="btn btn-secondary">Ứng dụng Mod</a>
               <a href="#contact" class="btn btn-secondary">Đặt lịch trao đổi</a>
             </div>
             <div class="hero-meta">
@@ -625,7 +628,7 @@
             <div class="ipa-icon">
               <img src="ipa/icons/dopamine-rh.png" alt="Dopamine Roothide" />
             </div>
-            <div class="ipa-info">
+            <div class="ipa-info visible">
               <h4>Dopamine Roothide</h4>
               <p class="ipa-version">v2.4.5.18</p>
               <p>Ẩn jailbreak khỏi app ngân hàng</p>
@@ -638,7 +641,7 @@
             >
           </div>
 
-          <div class="ipa-card fade-in">
+          <div class="ipa-card fade-in visible">
             <div class="ipa-icon">
               <img src="ipa/icons/bootstrap.png" alt="Bootstrap" />
             </div>
@@ -652,11 +655,11 @@
             >
           </div>
 
-          <div class="ipa-card fade-in">
+          <div class="ipa-card fade-in visible">
             <div class="ipa-icon">
               <img src="ipa/icons/serotonin.png" alt="Serotonin" />
             </div>
-            <div class="ipa-info">
+            <div class="ipa-info visible">
               <h4>Serotonin</h4>
               <p class="ipa-version">v1.2.1</p>
               <p>Dùng kết hợp với Bootstrap</p>
@@ -690,7 +693,7 @@
             <div class="ipa-icon">
               <img src="ipa/icons/appstoreplus.png" alt="AppStore++" />
             </div>
-            <div class="ipa-info">
+            <div class="ipa-info visible">
               <h4>AppStore++</h4>
               <p class="ipa-version">v1.0.3-2</p>
               <p>Downgrade/Upgrade app từ App Store</p>
@@ -700,7 +703,7 @@
             >
           </div>
 
-          <div class="ipa-card fade-in">
+          <div class="ipa-card fade-in visible">
             <div class="ipa-icon">
               <img src="ipa/icons/filza.png" alt="Filza" />
             </div>
@@ -803,7 +806,7 @@
             <a
               href="https://www.mediafire.com/file/ei8xl285mz0wldh/Spotify-Pro_9.0.74.ipa/file"
               target="_blank"
-              class="ipa-btn ipa-btn-external"
+              class="ipa-btn ipa-btn-external visible"
               ><i class="fas fa-external-link-alt"></i> Link</a
             >
           </div>
@@ -812,7 +815,7 @@
             <div class="ipa-icon">
               <img src="ipa/icons/youtube.png" alt="YouTube" />
             </div>
-            <div class="ipa-info">
+            <div class="ipa-info visible">
               <h4>YouTube Plus</h4>
               <p class="ipa-version">v20.34.2 (iOS 16+)</p>
               <p>Chặn QC, phát nền, PiP</p>
@@ -1043,7 +1046,7 @@
               <i class="fas fa-phone"></i>
               <div>
                 <h4>Điện thoại</h4>
-                <p>+84 989960304</p>
+                <p>1900100 có</p>
               </div>
             </div>
 
@@ -1051,7 +1054,7 @@
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Địa chỉ</h4>
-                <p>Từ Liêm, Hà Nội, Việt Nam</p>
+                <p>Hải Phòng, Việt Nam</p>
               </div>
             </div>
           </div>
@@ -1142,6 +1145,57 @@
 </script>
 
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // === 1. ĐOẠN CODE HIỆU ỨNG CUỘN MÀN HÌNH (SCROLL REVEAL) ===
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    const elements = document.querySelectorAll(".scroll-reveal");
+    elements.forEach((el) => observer.observe(el));
+
+
+    // === 2. ĐOẠN CODE XỬ LÝ NÚT MENU MOBILE ===
+    const mobileMenuBtn = document.getElementById("mobile-menu");
+    const navMenu = document.getElementById("navMenu");
+
+    if (mobileMenuBtn && navMenu) {
+        mobileMenuBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            navMenu.classList.toggle("active");
+        });
+
+        // Tự động đóng menu khi bấm vào một mục liên kết (Đã sửa lỗi cú pháp)
+        const navLinks = document.querySelectorAll(".nav-links a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                navMenu.classList.remove("active");
+            });
+        });
+    }
+});
+</script>
+
+<script>
+  // Chạy code ngay khi trang bắt đầu tải lại
+  window.location.hash = ""; // Xóa các ký tự # trên URL nếu có
+  
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual'; // Tắt tính năng tự nhớ vị trí cuộn của trình duyệt
+  }
+
+  window.addEventListener('beforeunload', function () {
+    window.scrollTo(0, 0); // Cuộn về đầu trang trước khi load
+  });
+</script>
 
       
 </body>

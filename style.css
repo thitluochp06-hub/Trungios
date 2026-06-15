@@ -136,6 +136,20 @@ img {
   display: none; /* Hidden on desktop by default */
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -879,7 +893,7 @@ display: block;
 margin: auto;
 margin-top: 15px;
 color: #2a2a34;
-font-size: 20px;
+size: 600px;
 
 }
 
