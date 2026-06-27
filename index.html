@@ -1,1203 +1,1206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
-    />
-    <meta name="theme-color" content="#6366f1" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"/>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Đăng Trung - Trung IOS</title>
+    <link rel="icon" type="image/png" href="anh3.img">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9995942204554048"
+     crossorigin="anonymous"></script>
+    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .terms-link-container {
+    text-align: center; /* Căn giữa chữ */
+    margin-top: 35px;   /* Khoảng cách phía trên */
+    margin-bottom: 35px; /* Khoảng cách phía dưới */
+}
 
-    <!-- SEO Meta Tags -->
-    <title>Hoàng Trung</title>
-    <meta
-      name="description"
-      content="iOS & Web App Developer, Apple Developer Program member. Chuyên phát triển ứng dụng iOS native (Swift/SwiftUI) và web applications hiện đại."
-    />
-    <meta
-      name="keywords"
-      content="iOS Developer, Web Developer, Swift, SwiftUI, React, Node.js, Apple Developer, HaiNinh, NihDev0"
-    />
-    <meta name="author" content="Nguyen Hai Ninh" />
+.terms-link {
+    color: #666; /* Màu xám mờ tinh tế */
+    font-size: 17px;
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+    font-family: sans-serif;
+    transition: 0.3s;
+}
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://haininh.dev/" />
-    <meta property="og:title" content="Trung- iOS & Web Developer" />
-    <meta
-      property="og:description"
-      content="iOS & Web App Developer, Apple Developer Program member. Chuyên phát triển ứng dụng iOS native (Swift/SwiftUI) và web applications hiện đại."
-    />
-    <meta property="og:image" content="https://haininh.dev/anh.jpg" />
+.terms-link:hover {
+    color: #4da3ff; /* Đổi màu xanh khi di chuột vào */
+    text-decoration: underline; /* Hiện gạch chân khi hover */
+}
+        .disclaimer-container {
+    text-align: center;
+    color: #888; /* Màu chữ xám nhạt */
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://haininh.dev/" />
-    <meta property="twitter:title" content="HaiNinh - iOS & Web Developer" />
-    <meta
-      property="twitter:description"
-      content="iOS & Web App Developer, Apple Developer Program member. Chuyên phát triển ứng dụng iOS native (Swift/SwiftUI) và web applications hiện đại."
-    />
-    <meta property="twitter:image" content="https://haininh.dev/anh.jpg" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/8089/8089999.png">
-  </head>
-  <body>
-   
-<!-- Navigation -->
-<nav id="navbar" class="app-header">
-    <div class="nav-container scroll-reveal">
-        <div class="nav-top">
-            <div class="logo">TrungTiger</div>
-            <ul class="platform-tabs">
-                <li><a href="#home" class="active">Trang chủ</a></li>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#skills">Kỹ năng</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#ios-tools">iOS Tools</a></li>
-                <li><a href="#achievements">Thành tích</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
+.disclaimer-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.disclaimer-box {
+    border: 1px solid #444; /* Viền tối */
+    border-radius: 10px; /* Bo góc */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.02); /* Nền hơi sáng nhẹ */
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.important-note {
+    color: #ff4d4d; /* Màu đỏ cho chữ Lưu ý */
+    font-weight: bold;
+}
+
+.disclaimer-box strong {
+    color: #fff; /* Làm nổi bật chữ KHÔNG */
+}
+        .cert-info {
+    background: rgba(255, 255, 255, 0.05); /* Nền mờ nhẹ */
+    border-left: 3px solid #007aff; /* Vạch xanh bên trái tạo điểm nhấn */
+    color: #8e8e93;
+    font-size: 13px;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+/* Thanh nền bọc ngoài */
+.menu-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important; /* Đây là dòng lệnh đưa con cưng của mày ra giữa */
+    background: rgba(10, 10, 10, 0.8) !important; 
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    padding: 0 20px !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 60px !important;
+    z-index: 9999 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-sizing: border-box !important;
+}
+
+/* Nút 3 gạch - Cho nó đứng tách biệt ở góc trái */
+.menu-toggle {
+    position: absolute !important;
+    left: 20px !important;
+    color: #a1a1a6 !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+}
+
+/* Cụm chữ ESign, KSign - Bây giờ nó sẽ hưởng cái 'justify-content: center' ở trên */
+.top-nav-buttons {
+    display: flex !important;
+    gap: 30px !important;
+}
+
+/* Chữ ESign / KSign style Apple */
+.nav-btn {
+    color: #a1a1a6 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    font-family: -apple-system, sans-serif !important;
+    text-transform: uppercase; /* Cho in hoa lên nhìn cho sang như mẫu */
+}
+
+.nav-btn:hover, .menu-toggle:hover {
+    color: #ffffff !important;
+}
+.install-btn:hover {
+    background-color: #007aff;
+    color: white !important;
+}
+
+/* Đảm bảo link đã nhấn không bị đổi sang màu tím */
+.install-btn:visited {
+    color: #007aff !important;
+}
+        /* Khung chứa logo */
+.app-icon-container {
+    width: 50px; /* Độ rộng bằng với icon ESign */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px; /* Bo góc icon */
+}
+
+/* Ép ảnh phải thu nhỏ lại theo khung */
+.app-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Giúp ảnh không bị méo */
+}
+
+/* Đảm bảo khung bọc app không bị vỡ */
+.app-item {
+    background: #1a1a1a;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    max-width: 100%; /* Ngăn việc tràn màn hình */
+    box-sizing: border-box;
+}
+
+        #sub-text {
+    display: inline-block;
+    font-weight: bold;
+    color: white; /* Chữ màu trắng theo ý mày */
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white; /* Dấu gạch nhấp nháy màu trắng */
+    width: 0;
+    
+    /* 10s là tổng thời gian: gõ (2s) + đứng im (5s) + xóa (2s) + nghỉ (1s) */
+    animation: typing-sub 10s steps(45) infinite, blink-sub 0.5s step-end infinite;
+}
+
+@keyframes typing-sub {
+    0% { width: 0; }           /* Bắt đầu gõ */
+    20% { width: 100%; }       /* Gõ xong trong 2 giây đầu (20% của 10s) */
+    70% { width: 100%; }       /* Đứng im 5 giây (từ 20% đến 70% là 5s) */
+    90% { width: 0; }          /* Xóa đi trong 2 giây tiếp theo */
+    100% { width: 0; }         /* Nghỉ 1 giây rồi lặp lại */
+}
+
+@keyframes blink-sub {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+        .header {
+    display: flex;
+    flex-direction: column; /* Xếp avatar bên trên, tên bên dưới */
+    align-items: center;    /* Căn giữa tắp lự theo chiều ngang */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 15px; /* Khoảng cách giữa avatar và cái tên */
+}
+
+.avatar {
+    width: 100px; /* Chỉnh lại kích thước nếu cần */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 !important; /* Xóa margin cũ để không bị lệch */
+}
+
+#hung-typing {
+    margin: 0 !important;
+    font-weight: bold;
+    /* Tao tăng lên 35px cho nó to hẳn ra, mày thích to nữa thì tăng số này lên */
+    font-size: 35px; 
+    display: inline-block;
+    letter-spacing: 1px; /* Cho các chữ thưa ra tí nhìn cho sang */
+
+    /* Giữ màu gradient cũ của mày */
+    background: linear-gradient(to right, #6a5af9, #29abe2, #00ffa1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.contact-form {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #1a1a1a; /* Nền đen xám cho ngầu */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.contact-form h2 {
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #00d4ff; /* Màu xanh neon điểm nhấn */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Chỉnh sửa ô nhập liệu */
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: #252525;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+    box-sizing: border-box;
+}
+
+/* Khi nhấn chuột vào ô nhập */
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #00d4ff;
+    outline: none;
+    background: #2a2a2a;
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.2);
+}
+
+.input-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Nút gửi xịn xò */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #00d4ff 0%, #0072ff 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+        /* --- SỬA CHÍNH: GIỚI HẠN CHIỀU RỘNG ĐỂ KHÔNG BỊ KÉO GIÃN --- */
+.sub-page-box.full-screen {
+    width: 100%;
+    min-height: 100vh;
+    padding: 60px 20px 40px 20px; /* Thêm padding trên để không bị che nút đóng */
+    background: #121417; /* Màu nền trùng với body */
+    
+    /* ĐOẠN NÀY QUAN TRỌNG ĐỂ NÓ KHÔNG XẤU */
+    max-width: 500px; /* Danh sách chỉ rộng chừng này thôi, không bị kéo giãn trên máy tính */
+    margin: 0 auto; /* Căn giữa cái danh sách */
+}
+
+/* TÚT LẠI TIÊU ĐỀ CHO TO, ĐẸP */
+.sub-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sub-header h2 {
+    font-size: 35px; /* Cho to lên gấp rưỡi */
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sub-header p {
+    font-size: 15px;
+    color: #8e8e93;
+    margin-top: 5px;
+}
+
+/* SỬA Ô TÌM KIẾM CHO RA DÁNG */
+.search-box {
+    position: relative;
+    margin: 20px 0 30px 0;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px 12px 45px; /* Chừa chỗ cho kính lúp bên trái */
+    border-radius: 12px;
+    background: #1c1f24; /* Màu nền ô tối */
+    border: 1px solid rgba(255,255,255,0.05); /* Viền mờ cho sang */
+    color: white;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8e8e93;
+}
+
+/* NÚT ĐÓNG X GÓC PHẢI */
+.close-btn {
+    position: fixed; /* Cố định để nó không chạy lung tung */
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    color: #ff4444; /* Màu đỏ cho nổi */
+    text-decoration: none;
+    z-index: 100000;
+}
+        /* Lớp nền đen phủ toàn màn hình */
+.sub-page-overlay {
+    position: fixed; /* Cố định nó trùm lên tất cả */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #121417; /* Màu nền tối */
+    z-index: 99999; /* Luôn nằm trên cùng */
+    display: none; /* MẶC ĐỊNH LÀ ẨN ĐI */
+    overflow-y: auto; /* Cho phép cuộn nếu nhiều app */
+}
+
+/* Khi ấn vào link có #page-ipa thì nó mới HIỆN ra */
+.sub-page-overlay:target {
+    display: block;
+}
+
+/* Nút đóng cho to và dễ bấm */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 35px;
+    color: #ff4444;
+    text-decoration: none;
+    font-weight: bold;
+}
+        .skills-section {
+    background-color: #1a1a1a; /* Màu nền tối giống trong ảnh */
+    padding: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* Khung nền xám của thanh bar */
+.progress-bar {
+    background-color: #333;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+}
+
+/* Phần thanh màu chạy bên trong */
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Chỉnh màu và độ dài (phần trăm) từng kỹ năng */
+.html-css { width: 80%; background-color: #f1c40f; } /* Màu vàng */
+.lua      { width: 65%; background-color: #3498db; } /* Màu xanh dương */
+.php      { width: 20%; background-color: #bdc3c7; } /* Màu xám sáng */
+.mysql    { width: 15%; background-color: #e74c3c; } /* Màu đỏ */
+        :root {
+            --bg-body: #121417;
+            --bg-card: #1a1d21;
+            --bg-item: #1c1f24;
+            --blue-tick: #1DA1F2;
+            --blue-btn: #3498db;
+            --text-gray: #aaa;
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
             
-           <div class="mobile-menu" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+            /* -- BẮT ĐẦU PHẦN CODE BACKGROUND MỚI -- */
+            background-color: #000000; /* Nền đen chủ đạo */
+            background-image:
+                /* Điểm sáng xanh dương mờ ở góc trên bên trái */
+                radial-gradient(at 10% 20%, rgba(0, 136, 204, 0.2) 0px, transparent 50%),
+                /* Điểm sáng tím nhẹ mờ ở góc dưới bên phải */
+                radial-gradient(at 80% 80%, rgba(138, 43, 226, 0.15) 0px, transparent 50%);
+            /* -- KẾT THÚC PHẦN CODE BACKGROUND MỚI -- */
+        }
+
+        /* --- CẬP NHẬT NAVBAR 3 GẠCH --- */
+        nav {
+            width: 100%;
+            background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(15px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 10px 20px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: flex-start; /* Nút 3 gạch nằm bên trái, đổi thành flex-end nếu muốn bên phải */
+            align-items: center;
+            position: relative;
+        }
+
+        .menu-toggle {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            padding: 5px;
+        }
+
+        .nav-links {
+            display: none; /* Mặc định ẩn menu */
+            position: absolute;
+            top: 50px;
+            left: -10px;
+            background: var(--bg-card);
+            width: 200px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        .nav-links.active {
+            display: flex; /* Hiện khi bấm nút */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            background: var(--blue-btn);
+        }
+
+        .container { width: 100%; max-width: 500px; padding: 20px; }
+
+        /* --- HEADER --- */
+        .header { text-align: center; padding: 40px 0 20px 0; }
+        .avatar { width: 110px; height: 110px; border-radius: 50%; border: 3px solid var(--blue-btn); margin-bottom: 15px; object-fit: cover; }
+        .name { font-size: 24px; font-weight: 700; display: flex; justify-content: center; align-items: center; gap: 8px; }
+
+        /* --- SOCIAL ICONS --- */
+        .icon-row { display: flex; justify-content: center; gap: 12px; margin-bottom: 30px; }
+        .icon-item { background: #25282c; width: 55px; height: 45px; border-radius: 10px; display: flex; justify-content: center; align-items: center; font-size: 20px; text-decoration: none; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .icon-item:hover { transform: translateY(-3px); background: #2e3238; }
+
+        /* --- PHẦN DOWNLOAD (DNS/CERT) --- */
+        .download-card { background: var(--bg-card); border-radius: 15px; padding: 30px 20px; text-align: center; margin-bottom: 40px; border: 1px solid rgba(255,255,255,0.05); }
+        .download-item { margin-bottom: 25px; }
+        .download-item h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+        .dl-btn { background: var(--blue-btn); width: 45px; height: 45px; border-radius: 8px; display: inline-flex; justify-content: center; align-items: center; color: white; text-decoration: none; font-size: 18px; transition: 0.3s; }
+        .dl-btn:hover { transform: scale(1.1); }
+
+        /* --- KHO ỨNG DỤNG SECTION --- */
+        .app-section { padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .tab-switcher { background: var(--bg-item); border-radius: 30px; padding: 5px; display: flex; margin: 25px 0; border: 1px solid rgba(255,255,255,0.1); }
+        .tab-btn { flex: 1; background: transparent; border: none; color: var(--text-gray); padding: 12px; border-radius: 25px; cursor: pointer; font-weight: 600; transition: 0.3s; }
+        .tab-btn.active { background: var(--blue-btn); color: white; }
+        
+        .app-item { background: var(--bg-card); border-radius: 18px; padding: 15px; margin-bottom: 12px; display: flex; align-items: center; gap: 15px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .app-item:hover { background: #22262b; }
+        .app-logo { width: 60px; height: 60px; border-radius: 14px; background: #333; object-fit: cover; }
+        .app-details {
+    flex-grow: 1;
+    display: flex;          /* Thêm dòng này */
+    flex-direction: column; /* Xếp tên và update theo hàng dọc */
+    align-items: flex-start; /* Ép cả 2 dòng về bên trái */
+    text-align: left;       /* Đảm bảo chữ không bị nhảy ra giữa */
+}
+
+.app-details p {
+    margin: 0;              /* Xóa bỏ khoảng cách thừa của thẻ p */
+}
+
+.app-details p:first-child { 
+    font-weight: 700; 
+    font-size: 15px; 
+    display: flex; 
+    align-items: center; 
+    gap: 5px; 
+    color: #ffffff;
+}
+
+.app-details p:last-child { 
+    font-size: 11px; 
+    color: var(--text-gray); 
+    margin-top: 2px;        /* Khoảng cách nhẹ giữa tên và ngày cho thoáng */
+}
+        .btn-install { color: var(--blue-btn); text-decoration: none; font-weight: 800; font-size: 11px; padding: 6px 14px; border: 1.5px solid var(--blue-btn); border-radius: 20px; transition: 0.3s; }
+        .btn-install:hover { background: var(--blue-btn); color: white; }
+
+        /* --- PHẦN SIGNED APP (ĐÃ ĐỔI TÊN THÀNH IPA APP) --- */
+        .signed-header { display: flex; justify-content: flex-end; align-items: center; margin: 40px 0 20px 0; padding-right: 5px; }
+        ..signed-title {
+    display: block;      /* Ép nó thành một khối để căn giữa được */
+    text-align: center;  /* Đẩy chữ ra giữa */
+    width: 100%;         /* Chiều rộng tối đa */
+    text-decoration: none; /* Xóa cái gạch chân của link đi cho đẹp */
+    color: white;        /* Giữ màu chữ trắng */
+    cursor: pointer;     /* Hiện hình bàn tay khi di chuột vào */
+}
+
+        .footer-text { text-align: center; color: var(--text-gray); font-size: 12px; margin-top: 40px; }
+        <style>
+    /* --- PHẦN S1: Dán vào class của cái chữ Hùng IOS --- */
+    .name-user {
+        display: inline-block; 
+        white-space: nowrap;
+        vertical-align: middle; /* Căn chỉnh cho thẳng hàng với cái tích xanh */
+        overflow: hidden;
+        border-right: 3px solid #00a2ff; 
+        width: 0;
+        margin: 0 auto;
+        animation: 
+            typing-hung 3.5s steps(8) infinite, 
+            blink-caret 0.75s step-end infinite;
+    }
+
+    /* --- PHẦN S2: Dán ngay bên dưới S1 luôn --- */
+    @keyframes typing-hung {
+        0% { width: 0; }
+        40%, 60% { width: 100%; } 
+        90%, 100% { width: 0; }
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: #00a2ff; }
+    }
+</style>
+    </style>
+</head>
+<body>
+
+   <nav class="menu-container">
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
     </div>
+
+    <div class="top-nav-buttons">
+       
+        <a href="#esign-section" class="nav-btn">ESign</a>
+        <a href="#ksign-section" class="nav-btn">KSign</a>
+        <a href="#download-section" class="nav-btn">Locket</a>
+        <a href="#skill-section" class="nav-btn">skill</a>
+
+    </div>
+
+    <div class="nav-links" id="navLinks"> 
+        <a href="locket.html"style="display:none;">Hướng Dẫn Cài Locket Gold</a>       <!--thêm style="display:none;" để ẩn tạm xóa đi là hiện-->
+       <a href="https://trungios.site/">TRANG CHỦ</a> 
+        <a href="https://hoangdangtrung.bio.link/">Cài Đặt Esign/Ksign Bio.Link</a>               <!--thêm style="display:none;" để ản tạm thời xóaddi là hiện trên web-->
+        <a href="capcut.html">CAPCUT PRO</a>                                         <!---Viết như dòng này để hiện-->
+    </div>
+    
+
 </nav>
 
-<!-- Mobile Menu Modal (Outside navbar for proper z-index stacking) -->
-<div class="nav-bottom" id="navMenu">
-    <ul class="nav-links scroll-reveal">
-        <li><a href="#home" class="active">Trang chủ</a></li>
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#skills">Kỹ năng</a></li>
-        <li><a href="#projects">Dự án</a></li>
-        <li><a href="#ios-tools">iOS Tools</a></li>
-        <li><a href="#achievements">Thành tích</a></li>
-        <li><a href="#contact">Liên hệ</a></li>
-    </ul>
-</div>
+       <div class="container">
+        <div class="header">
+            <img src="images/at.PNG" class="avatar">
+            <div id="hung-typing" class="name">Hoàng Đăng Trung <i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></div>
+         <!--   <p class="description">
+    <span id="sub-text">Tôi là Trung .<br> Đang sinh sống và làm việc tại Nhật Bản <br>đất nước mặt trời mọc</marquee> -->
+ 
+      
+ <!-- Thêm Font chữ thư pháp từ Google Fonts -->
+<link rel="preconnect" href="https://googleapis.com">
+<link rel="preconnect" href="https://gstatic.com" crossorigin>
+<link href="https://googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 
-    <!-- Hero Section -->
-    <section id="home" class="hero scroll-reveal" >
-      <div class="container">
-        <div class="hero-card">
-          <!-- Label moved outside for better mobile layout control -->
-          <span class="hero-label">APPLE & WEB DEVELOPER</span>
+<p class="description" style="min-height: 24px; margin: 15px 0; text-align: center;">
+<span id="typing-text" style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #ffffff;">
 
-          <div class="hero-content">
-            <h1>
-              Xin chào, tôi là <span class="highlight">Hoàng Trung</span> –
-              APPLE & Web App Developer
-            </h1>
-            <p class="hero-subtitle">
-              <svg
-                class="apple-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 814 1000"
-                fill="currentColor"
-              >
-                <path
-                  d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"
-                />
-              </svg>
-              Apple Developer Program member
-            </p>
-            <p>
-              Tôi là một người đam mê công nghệ.<br />Và cũng mong muốn phát
-              triển kĩ năng của mình.
-            </p>
-            <div class="hero-buttons">
-              <a href="/TrinhlamOanh.html" class="btn btn-primary">Chăc là người này</a>
-              <a href="#ios-tools" class="btn btn-secondary">Ứng dụng Mod</a>
-              <a href="#contact" class="btn btn-secondary">Đặt lịch trao đổi</a>
-            </div>
-            <div class="hero-meta">
-              <div class="hero-meta-info">
-                <div class="meta-title">TrungTiger</div>
-                <div class="meta-subtitle">
-                  APPLE & Web Developer | Digital Content Creator
-                </div>
-              </div>
-              <div class="social-links">
-                <a
-                  href="https://www.instagram.com/hoangtrung3574"
-                  target="_blank"
-                  aria-label="instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a
-                  href="https://www.facebook.com/conixx1.Trung/"
-                  target="_blank"
-                  aria-label="Facebook"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-                <a
-                  href="https://www.youtube.com/@Lienquanmobile736"
-                  target="_blank"
-                  aria-label="Telegram"
-                  ><i class="fab fa-youtube"></i
-                ></a>
-                <a
-                  href="https://www.tiktok.com/@trungguitarist"
-                  target="_blank"
-                  aria-label="tiktok"
-                  ><i class="fab fa-tiktok"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="hero-image">
-            <div class="hero-avatar">
-              <img src="img/a6.PNG" alt="Hoàng Đăng Trung" width="220" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about scroll-reveal">
-      <div class="container">
-        <h2 class="section-title fade-in visible">Giới thiệu về tôi</h2>
-        <div class="profile-info-container">
-          <h2 style="color: #000000" class="profile-title">
-            Thông Tin Cá Nhân
-          </h2>
 
-          <!-- <div class="info-item">
-            <span style="color: #796a6a" class="info-label"> Họ tên:</span>
-            <span class="info-value">Nguyễn Văn A</span>
-          </div>
+        
 
-          <div class="info-item">
-            <span style="color: #766a6a" class="info-label"> Quê Quán:</span>
-            <span class="info-value">Hải Phòng, Việt Nam</span>
-          </div>
+        <style>
+            @keyframes blink { from, to { border-color: transparent } 50% { border-color: #38bdf8; } }
+        </style>
 
-          <div class="info-item">
-            <span style="color: #7d7070" class="info-label"> Sinh Ngày:</span>
-            <span class="info-value">01/01/00</span>
-          </div>
+        <script>
+            const words = [
+                "Chuyên lập trình và thiết kế website.", 
+                   "Hãy Liên Hệ Trực Tiếp Với Tôi."
+            ];
+            let i = 0;
+            let timer;
 
-          <div class="info-item">
-            <span style="color: #796f6f" class="info-label"> Sở Thích:</span>
-            <span class="info-value"> Tìm Phú Bà</span>
-          </div>
-        </div> -->
+            function typingEffect() {
+                let word = words[i].split("");
+                var loopTyping = function() {
+                    if (word.length > 0) {
+                        const el = document.getElementById('typing-text');
+                        if(el) el.innerHTML += word.shift();
+                    } else {
+                        setTimeout(deletingEffect, 2000);
+                        return false;
+                    }
+                    timer = setTimeout(loopTyping, 100);
+                };
+                loopTyping();
+            }
 
-        <!-- <p class="section-subtitle fade-in">
-          iOS & Web App Developer kết hợp tư duy thiết kế sản phẩm với kinh
-          nghiệm phát triển ứng dụng đa nền tảng và sáng tạo nội dung số.
-        </p> -->
-        <div class="about-content">
-          <div class="about-text fade-in visible">
-            <h3>Đam mê phát triển phát triển lập trình Website.</h3>
-            <!-- <p>
-              Tôi là iOS & Web App Developer với hơn 3 năm kinh nghiệm, là thành
-              viên của Apple Developer Program. Tôi chuyên phát triển ứng dụng
-              iOS native (Swift/SwiftUI) và web applications hiện đại với React,
-              Node.js và các công nghệ tiên tiến.
-            </p>
-            <p>
-              Tôi luôn tìm cách học hỏi những công nghệ mới và áp dụng chúng vào
-              các dự án thực tế để mang lại giá trị tốt nhất cho người dùng và
-              doanh nghiệp.
-            </p> -->
-
-            <div class="expertise-summary">
-              <p>
-                Bên cạnh lập trình, tôi còn có chuyên môn trong
-                <strong>sản xuất nội dung số</strong> và
-                <strong>các nội dung liên quan đến IPA</strong>.
-              </p>
-             <!-- Thêm id="btnExpand" vào nút bấm -->
-<button class="btn-expand expand" id="btnExpand">
-  <span>Xem chi tiết</span>
-  <i class="fas fa-chevron-down" id="iconExpand"></i>
-</button>
-    
-            </div>
-
-            <div class="expertise-details" id="expertiseDetails">
-              <div class="expertise-item"></di>
-
+            function deletingEffect() {
+                let word = words[i].split("");
+                var loopDeleting = function() {
+                    if (word.length > 0) {
+                        word.pop();
+                        const el = document.getElementById('typing-text');
+                        if(el) el.innerHTML = word.join("");
+                    } else {
+                        if (words.length > (i + 1)) { i++; } else { i = 0; }
+                        setTimeout(typingEffect, 500);
+                        return false;
+                    }
+                    timer = setTimeout(loopDeleting, 40);
+                };
+                loopDeleting();
+            }
+            setTimeout(typingEffect, 1000);
+        </script>
               
-                <h4><i class="fas fa-video"></i> Content Creator & Editor</h4>
-                <p>
-                  Có kinh nghiệm chuyên môn trong lĩnh vực sản xuất và biên tập
-                  nội dung số. Thành thạo kỹ năng nhiếp ảnh, quay phim, dựng
-                  phim và hậu kỳ video. Có khả năng xử lý và chỉnh sửa hình ảnh
-                  chuyên nghiệp, đảm bảo chất lượng và tính thẩm mỹ cao cho các
-                  sản phẩm truyền thông đa phương tiện. Đặc biệt, sở trường
-                  trong việc sáng tạo và xây dựng nội dung giải trí, phù hợp với
-                  đa dạng nền tảng xã hội, đáp ứng nhu cầu thị hiếu của người
-                  xem.
-                </p>
-              </div>
+ 
+ 
+ 
+ 
+ 
+ 
+    <!--  </p>
+            <p class="description">
+    <span id="sub-text">Hãy Liên Hệ Trực Tiếp Để Được Giúp Đỡ</span>
+</p> -->
 
-              <div class="expertise-item">
-                <h4>
-                  <i class="fas fa-shield-alt"></i> Kỹ năng Nghiệp vụ An ninh và
-                  Cứu hộ
-                </h4>
-                <p>
-                  <!-- Được đào tạo chuyên sâu và chính quy trong lực lượng Công an
-                  Nhân dân về nghiệp vụ điều lệnh, quân sự, võ thuật, bắn súng,
-                  và tác phong chấp hành nghiêm chỉnh. Có kinh nghiệm làm việc
-                  trong lĩnh vực Phòng cháy chữa cháy và Cứu nạn cứu hộ, có khả
-                  năng sơ cứu ban đầu vận hành phương tiện chuyên dụng. -->
-                </p>
-              </div>
+
+
+
+
+<!-- KHUNG PHÁT NHẠC THU NHỎ -->
+<!-- ======================================================== -->
+    <!-- CODE THANH NGHE NHẠC GHIM GÓC DƯỚI BÊN PHẢI (CHỈ DÁN ĐOẠN NÀY) -->
+    <!-- ======================================================== -->
+    <div class="music-player-fixed">
+        <button id="playBtn" class="play-purple-btn">
+            <div class="wave-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </div>
-          <div class="about-features fade-in visible">
-            <div class="feature-item">
-              <i class="fab fa-apple"></i>
-              <h4>iOS Development</h4>
-              <p>
-                Phát triển ứng dụng iOS native với Swift/SwiftUI, tối ưu hiệu
-                suất và trải nghiệm người dùng
-              </p>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-code"></i>
-              <h4>Web Applications</h4>
-              <p>
-                Xây dựng web apps hiện đại với React, Next.js, Node.js và kiến
-                trúc scalable
-              </p>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-video"></i>
-              <h4>Content Creation</h4>
-              <p>Sản xuất và biên tập nội dung đa phương tiện</p>
-            </div>
-            <div class="feature-item">
-              <i class="fas fa-lightbulb"></i>
-              <h4>Creative Solutions</h4>
-              <p>Giải pháp sáng tạo cho mọi thách thức</p>
-            </div>
-          </div>
+        </button>
+        <div id="statusText" class="status-text" title="Bấm vào đây để đổi bài">Đang tải...</div>
+        <div class="volume-container">
+            <span id="volumeIcon" class="volume-icon">🔊</span>
+            <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="0.8">
         </div>
-      </div>
-    </section>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills scroll-reveal visible">
-      <div class="container visible">
-        <h2 class="section-title fade-in visible">Kỹ năng chuyên môn</h2>
-        <p class="section-subtitle fade-in visible">
-          Bộ kỹ năng đa dạng giúp tôi xây dựng sản phẩm số trọn vẹn từ ý tưởng
-          đến vận hành.
-        </p>
-        <div class="skills-grid">
-          <div class="skill-category fade-in visible">
-            <h3>iOS Development</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Swift</span>
-              <span class="skill-tag">SwiftUI</span>
-              <span class="skill-tag">UIKit</span>
-              <span class="skill-tag">Xcode</span>
-              <span class="skill-tag">Core Data</span>
-              <span class="skill-tag">Combine</span>
-              <span class="skill-tag">MVVM</span>
-              <span class="skill-tag">iOS SDK</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in visible">
-            <h3>Web Frontend</h3>
-            <div class="skill-list">
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Next.js</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Vue.js</span>
-              <span class="skill-tag">HTML5</span>
-              <span class="skill-tag">CSS3</span>
-              <span class="skill-tag">Tailwind CSS</span>
-              <span class="skill-tag">SASS</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in visible">
-            <h3>Backend & API</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">REST API</span>
-              <span class="skill-tag">GraphQL</span>
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Laravel</span>
-              <span class="skill-tag">Socket.io</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in visible">
-            <h3>Database & Tools</h3>
-            <div class="skill-list">
-              <span class="skill-tag">MySQL</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Docker</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Webpack</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in visible">
-            <h3>Content Creation & Media</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Nhiếp ảnh</span>
-              <span class="skill-tag">Quay phim</span>
-              <span class="skill-tag">Dựng phim</span>
-              <span class="skill-tag">Hậu kỳ video</span>
-              <span class="skill-tag">Chỉnh sửa ảnh</span>
-              <span class="skill-tag">Adobe Premiere</span>
-              <span class="skill-tag">Adobe Photoshop</span>
-              <span class="skill-tag">Content Strategy</span>
-              <span class="skill-tag">Social Media</span>
-            </div>
-          </div>
-          <div class="skill-category fade-in visible">
-            <h3>Professional Skills</h3>
-            <div class="skill-list">
-              <span class="skill-tag">Nghiệp vụ An ninh</span>
-              <span class="skill-tag">Điều lệnh</span>
-              <span class="skill-tag">Võ thuật</span>
-              <span class="skill-tag">Bắn súng</span>
-              <span class="skill-tag">PCCC</span>
-              <span class="skill-tag">Cứu nạn cứu hộ</span>
-              <span class="skill-tag">Sơ cứu</span>
-              <span class="skill-tag">Vận hành thiết bị</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <audio id="bgAudio" preload="auto"></audio>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects scroll-reveal visible">
-      <div class="container">
-        <h2 class="section-title fade-in visible">Dự án nổi bật</h2>
-        <p class="section-subtitle fade-in visible">
-          Những sản phẩm tiêu biểu được tinh chỉnh với trải nghiệm người dùng
-          cao cấp và hiệu suất tối ưu.
-        </p>
-        <div class="projects-grid">
-          <div class="project-card fade-in visible">
-            <div class="project-image">
-              <i class="fas fa-shopping-cart"></i>
-            </div>
-            <div class="project-content">
-              <h3>E-commerce Website</h3>
-              <p>
-                Platform thương mại điện tử hoàn chỉnh với tính năng thanh toán
-                online, quản lý inventory và dashboard admin.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">MongoDB</span>
-                <span class="tech-tag">Stripe</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+    <style>
+        .music-player-fixed {
+            position: fixed;
+            bottom: 20px; 
+            right: 20px;  
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95); 
+            padding: 6px 12px 6px 6px;
+            border-radius: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            z-index: 99999; /* Số lớn để luôn nổi lên trên cùng trang web của bạn */
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .play-purple-btn {
+            background: #d8b4fe; 
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s, background 0.2s;
+            flex-shrink: 0;
+        }
+        .play-purple-btn:hover { background: #c084fc; transform: scale(1.05); }
+        .wave-icon { display: flex; align-items: flex-end; gap: 3px; height: 14px; }
+        .wave-icon span { width: 3px; height: 100%; background-color: white; border-radius: 2px; animation: none; }
+        .playing .wave-icon span:nth-child(1) { animation: bounce 0.5s ease infinite alternate; }
+        .playing .wave-icon span:nth-child(2) { animation: bounce 0.8s ease infinite alternate 0.15s; }
+        .playing .wave-icon span:nth-child(3) { animation: bounce 0.6s ease infinite alternate 0.3s; }
+        @keyframes bounce { 0% { height: 30%; } 100% { height: 100%; } }
+        .status-text { font-size: 12px; color: #777; margin: 0 10px; white-space: nowrap; max-width: 120px; overflow: hidden; text-overflow: ellipsis; cursor: pointer; user-select: none; }
+        .status-text:hover { color: #a855f7; text-decoration: underline; }
+        .volume-container { display: flex; align-items: center; width: 0; overflow: hidden; transition: width 0.3s ease, margin 0.3s ease; margin-left: 0; }
+        .music-player-fixed:hover .volume-container { width: 80px; margin-left: 5px; }
+        .volume-icon { font-size: 12px; color: #9b5de5; margin-right: 5px; cursor: pointer; }
+        .volume-slider { width: 100%; height: 4px; accent-color: #a855f7; cursor: pointer; }
+    </style>
 
-          <div class="project-card fade-in visible">
-            <div class="project-image">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="project-content">
-              <h3>Analytics Dashboard</h3>
-              <p>
-                Dashboard phân tích dữ liệu với biểu đồ interactive, real-time
-                updates và export functionality.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">D3.js</span>
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Flask</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+    <script>
+        // Danh sách bài hát (Đã sửa đường dẫn thành thư mục "mp3" của bạn)
+        const playlist = [
+            { title: "Come My Way", url: "mp3/come-my-way.mp3" },
+            { title: "Doraemon", url: "mp3/doraemon.mp3" },
+            { title: "Rap Tyga", url: "mp3/Raptyga.mp3" }
+        ];
 
-          <div class="project-card fade-in visible">
-            <div class="project-image">
-              <i class="fas fa-tasks"></i>
-            </div>
-            <div class="project-content">
-              <h3>Task Management App - Cá Nhân</h3>
-              <p>
-                Ứng dụng quản lý công việc cá nhân với tính năng to-do list,
-                reminder, priority levels, và progress tracking. Giao diện đơn
-                giản, dễ sử dụng cho người dùng cá nhân.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Tailwind CSS</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+        let currentTrackIndex = 0;
+        const audio = document.getElementById('bgAudio');
+        const playBtn = document.getElementById('playBtn');
+        const statusText = document.getElementById('statusText');
+        const volumeSlider = document.getElementById('volumeSlider');
+        const volumeIcon = document.getElementById('volumeIcon');
 
-          <div class="project-card fade-in visible">
-            <div class="project-image">
-              <i class="fas fa-users-cog"></i>
-            </div>
-            <div class="project-content">
-              <h3>Task Management App - Phòng Ban</h3>
-              <p>
-                Hệ thống quản lý công việc cho team với tính năng assign tasks,
-                collaboration, real-time updates, và team dashboard. Hỗ trợ quản
-                lý nhiều dự án và thành viên.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Node.js</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Socket.io</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+        function loadTrack(index) {
+            audio.src = playlist[index].url;
+            statusText.innerText = playlist[index].title;
+        }
 
-          <div class="project-card fade-in visible">
-            <div class="project-image">
-              <i class="fas fa-images"></i>
-            </div>
-            <div class="project-content">
-              <h3>Thư Viện Ảnh Công Ty</h3>
-              <p>
-                Hệ thống quản lý và lưu trữ ảnh cho doanh nghiệp với tính năng
-                upload, categorize, search, và share. Hỗ trợ nhiều định dạng ảnh
-                và quản lý quyền truy cập.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">AWS S3</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Sharp</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+        loadTrack(currentTrackIndex);
+        audio.volume = volumeSlider.value;
 
-          <div class="project-card fade-in visible">
-            <div class="project-image">
-              <i class="fas fa-wallet"></i>
-            </div>
-            <div class="project-content">
-              <h3>Quản Lý Chi Tiêu Cá Nhân</h3>
-              <p>
-                Ứng dụng theo dõi thu chi cá nhân với tính năng budget planning,
-                expense tracking, financial reports, và data visualization. Giúp
-                người dùng quản lý tài chính hiệu quả.
-              </p>
-              <div class="project-tech">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Chart.js</span>
-                <span class="tech-tag">Firebase</span>
-                <span class="tech-tag">Material-UI</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link">
-                  <i class="fas fa-external-link-alt"></i>
-                  Live Demo
-                </a>
-                <a href="#" class="project-link">
-                  <i class="fab fa-github"></i>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        document.addEventListener('click', () => {
+            if (audio.paused) { startPlay(); }
+        }, { once: true });
 
-    <!-- iOS Tools Section -->
-    <!-- iOS Tools Section -->
-    <section id="ios-tools" class="ios-tools scroll-reveal">
-      <div class="container">
-        <h2 class="section-title fade-in ">iOS Tools & Apps</h2>
-        <p class="section-subtitle fade-in visible">
-          Bộ sưu tập công cụ và ứng dụng iOS hữu ích cho TrollStore và
-          Jailbreak.
-        </p>
+        playBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (audio.paused) { startPlay(); } else { stopPlay(); }
+        });
 
-        <!-- Jailbreak Tools -->
-        <h3 class="ipa-category-title fade-in visible">
-          <i class="fas fa-unlock-alt"></i> Jailbreak Tools
-        </h3>
-        <div class="ipa-grid">
-          <div class="ipa-card fade-in visible visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/trollinstallerx.png" alt="TrollInstallerX" />
-            </div>
-            <div class="ipa-info">
-              <h4>TrollInstallerX</h4>
-              <p class="ipa-version">v1.0.3</p>
-              <p>Cài TrollStore cho iOS 15.0-16.6.1</p>
-            </div>
-            <a href="ipa/TrollInstallerX.ipa" class="ipa-btn"
-              ><i class="fas fa-download"></i> Tải</a
-            >
-          </div>
+        statusText.addEventListener('click', (e) => {
+            e.stopPropagation();
+            nextTrack();
+        });
 
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/dopamine.png" alt="Dopamine" />
-            </div>
-            <div class="ipa-info">
-              <h4>Dopamine</h4>
-              <p class="ipa-version">v2.4.5 Rootless</p>
-              <p>Jailbreak iOS 15.0-16.6.1</p>
-            </div>
-            <a href="ipa/Dopamine.ipa" class="ipa-btn"
-              ><i class="fas fa-download"></i> Tải</a
-            >
-          </div>
+        function nextTrack() {
+            currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+            loadTrack(currentTrackIndex);
+            startPlay();
+        }
 
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/dopamine-rh.png" alt="Dopamine Roothide" />
-            </div>
-            <div class="ipa-info visible">
-              <h4>Dopamine Roothide</h4>
-              <p class="ipa-version">v2.4.5.18</p>
-              <p>Ẩn jailbreak khỏi app ngân hàng</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/c5vca2870rx23sn/roothide-Dopamine-mount-2.4.5.18.12052025.tipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
+        function startPlay() {
+            audio.play().then(() => {
+                playBtn.classList.add('playing');
+                statusText.innerText = playlist[currentTrackIndex].title;
+            }).catch(err => { console.log("Chặn phát tự động: ", err); });
+        }
 
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/bootstrap.png" alt="Bootstrap" />
-            </div>
-            <div class="ipa-info">
-              <h4>Bootstrap</h4>
-              <p class="ipa-version">v1.4</p>
-              <p>Semi-jailbreak cho iOS 15.0-17.0</p>
-            </div>
-            <a href="ipa/Bootstrap.tipa" class="ipa-btn"
-              ><i class="fas fa-download"></i> Tải</a
-            >
-          </div>
+        function stopPlay() {
+            audio.pause();
+            playBtn.classList.remove('playing');
+            statusText.innerText = "Tạm dừng";
+        }
 
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/serotonin.png" alt="Serotonin" />
-            </div>
-            <div class="ipa-info visible">
-              <h4>Serotonin</h4>
-              <p class="ipa-version">v1.2.1</p>
-              <p>Dùng kết hợp với Bootstrap</p>
-            </div>
-            <a href="ipa/Serotonin.tipa" class="ipa-btn"
-              ><i class="fas fa-download"></i> Tải</a
-            >
-          </div>
+        audio.addEventListener('ended', nextTrack);
 
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/block-update.png" alt="Block Update" />
-            </div>
-            <div class="ipa-info">
-              <h4>Chặn cập nhật iOS</h4>
-              <p class="ipa-version">Profile</p>
-              <p>Ngăn thiết bị cập nhật iOS tự động</p>
-            </div>
-            <a href="ipa/block-update.mobileconfig" class="ipa-btn"
-              ><i class="fas fa-download"></i> Tải</a
-            >
-          </div>
-        </div>
+        volumeSlider.addEventListener('input', (e) => {
+            audio.volume = e.target.value;
+            if (audio.volume === 0) { volumeIcon.innerText = "🔇"; } 
+            else if (audio.volume < 0.4) { volumeIcon.innerText = "🔈"; } 
+            else { volumeIcon.innerText = "🔊"; }
+        });
 
-        <!-- TrollStore Apps -->
-        <h3 class="ipa-category-title fade-in visible">
-          <i class="fas fa-store"></i> TrollStore Apps
-        </h3>
-        <div class="ipa-grid">
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/appstoreplus.png" alt="AppStore++" />
-            </div>
-            <div class="ipa-info visible">
-              <h4>AppStore++</h4>
-              <p class="ipa-version">v1.0.3-2</p>
-              <p>Downgrade/Upgrade app từ App Store</p>
-            </div>
-            <a href="ipa/AppStorePlus.ipa" class="ipa-btn"
-              ><i class="fas fa-download"></i> Tải</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/filza.png" alt="Filza" />
-            </div>
-            <div class="ipa-info">
-              <h4>Filza File Manager</h4>
-              <p class="ipa-version">Latest</p>
-              <p>Truy cập toàn bộ hệ thống file iOS</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/ao47qdt86gmirdc/ChatGPT-1.0.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/copylog.png" alt="CopyLog" />
-            </div>
-            <div class="ipa-info visible">
-              <h4>CopyLog</h4>
-              <p class="ipa-version">v1.7</p>
-              <p>Lưu nhật ký clipboard</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/nwumxmujgxdw65p/Copylog.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/locsim.png" alt="LocSim" />
-            </div>
-            <div class="ipa-info">
-              <h4>LocSim</h4>
-              <p class="ipa-version">v1.3.7</p>
-              <p>Giả lập vị trí GPS</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/h9mogis6wc1bmp8/LocSim-1.3.7.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/geranium.png" alt="Geranium" />
-            </div>
-            <div class="ipa-info">
-              <h4>Geranium</h4>
-              <p class="ipa-version">v1.1.3</p>
-              <p>Tối ưu iOS, quản lý daemon</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/qdtuto9l9ubk930/Geranium.tipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/audiorecorder.png" alt="AudioRecorder" />
-            </div>
-            <div class="ipa-info">
-              <h4>AudioRecorder</h4>
-              <p class="ipa-version">v6.0.3k</p>
-              <p>Ghi âm cuộc gọi iOS 14-16.6.1</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/ao47qdt86gmirdc/ChatGPT-1.0.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-        </div>
-
-        <!-- Ứng dụng Mod -->
-        <h3 id="apps-mod" class="ipa-category-title fade-in visible">
-          <i class="fas fa-magic"></i> Ứng dụng Mod
-        </h3>
-        <div class="ipa-grid">
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/spotify.png" alt="Spotify" />
-            </div>
-            <div class="ipa-info">
-              <h4>Spotify Premium</h4>
-              <p class="ipa-version">v9.0.74</p>
-              <p>Mở khóa Premium, không quảng cáo</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/ei8xl285mz0wldh/Spotify-Pro_9.0.74.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external visible"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/youtube.png" alt="YouTube" />
-            </div>
-            <div class="ipa-info visible">
-              <h4>YouTube Plus</h4>
-              <p class="ipa-version">v20.34.2 (iOS 16+)</p>
-              <p>Chặn QC, phát nền, PiP</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/05cz73ae5ikhx7n/YouTube_20.34.2_Plus.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/youtube.png" alt="YouTube" />
-            </div>
-            <div class="ipa-info">
-              <h4>YouTube Plus</h4>
-              <p class="ipa-version">v19.20.2 (iOS 14+)</p>
-              <p>Chặn QC, phát nền, PiP</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/byuadrmula5oa67/%255BiOS14%255DYTPlus_v5.1_%252819.20.2%2529.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/ulike.png" alt="Ulike" />
-            </div>
-            <div class="ipa-info">
-              <h4>Ulike VIP</h4>
-              <p class="ipa-version">v5.4.1</p>
-              <p>Mở khóa tính năng VIP</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/3drxq1ut1gbybpm/Ulike_5.4.1_1755688515.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/beautycam.png" alt="BeautyCam" />
-            </div>
-            <div class="ipa-info">
-              <h4>BeautyCam VIP</h4>
-              <p class="ipa-version">v12.7.60</p>
-              <p>Mở khóa tính năng VIP</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/p7b6set95vcavsj/BeautyCam_VIP_12.7.60_bvn.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/picsart.png" alt="PicsArt" />
-            </div>
-            <div class="ipa-info">
-              <h4>PicsArt Gold</h4>
-              <p class="ipa-version">v28.2.2</p>
-              <p>Mở khóa Gold, đầy đủ filter</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/6dusebhruhc1lk9/PicsArt_28.2.2_bvn.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/snapedit.png" alt="SnapEdit" />
-            </div>
-            <div class="ipa-info">
-              <h4>SnapEdit Pro</h4>
-              <p class="ipa-version">v6.0.2</p>
-              <p>Xóa vật thể bằng AI</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/k66ble461olqqku/SnapEdit+Pro_6.0.2_bvn.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/chatgpt.png" alt="ChatGPT" />
-            </div>
-            <div class="ipa-info">
-              <h4>ChatGPT</h4>
-              <p class="ipa-version">iOS 16+</p>
-              <p>ChatGPT cho TrollStore</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/ao47qdt86gmirdc/ChatGPT-1.0.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-
-          <div class="ipa-card fade-in visible">
-            <div class="ipa-icon">
-              <img src="ipa/icons/rophim.png" alt="Rổ Phim" />
-            </div>
-            <div class="ipa-info">
-              <h4>Rổ Phim Unlock</h4>
-              <p class="ipa-version">v1.0.5</p>
-              <p>Kích hoạt ROX, bỏ QR</p>
-            </div>
-            <a
-              href="https://www.mediafire.com/file/8cmvovgvu84s5bd/6752686628-1.0.5-modded.ipa/file"
-              target="_blank"
-              class="ipa-btn ipa-btn-external"
-              ><i class="fas fa-external-link-alt"></i> Link</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements scroll-reveal">
-      <div class="container visible">
-        <h2 class="section-title fade-in visible">Thành tích và Khen thưởng</h2>
-        <p class="section-subtitle fade-in visible">
-          Một vài dấu mốc khẳng định sự tận tâm, kỷ luật và tinh thần phục vụ
-          cộng đồng.
-        </p>
-        <div class="achievements-grid">
-          <div class="achievement-card fade-in visible">
-            <div class="achievement-icon">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Giải Nhì Võ Thuật</h3>
-              <p>
-                Hội thi Bắn súng, Võ thuật lực lượng trực tiếp chiến đấu trong
-                Công an nhân dân lần thứ I
-              </p>
-              <span class="achievement-year">2020</span>
-            </div>
-          </div>
-
-          <div class="achievement-card fade-in visible">
-            <div class="achievement-icon">
-              <i class="fas fa-medal"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Giấy khen Cục trưởng</h3>
-              <p>Cục Cảnh sát Phòng cháy chữa cháy và Cứu nạn cứu hộ</p>
-              <span class="achievement-badge">Cấp Trung ương</span>
-            </div>
-          </div>
-
-          <div class="achievement-card fade-in visible">
-            <div class="achievement-icon">
-              <i class="fas fa-award"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Giấy khen Giám đốc</h3>
-              <p>Công an tỉnh Hải Dương</p>
-              <span class="achievement-badge">Cấp Tỉnh</span>
-            </div>
-          </div>
-
-          <div class="achievement-card fade-in visible">
-            <div class="achievement-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="achievement-content">
-              <h3>Giấy khen Giám đốc</h3>
-              <p>Công an Thành phố Hà Nội</p>
-              <span class="achievement-badge">Cấp Thành phố</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2 class="section-title fade-in visible">Liên hệ với tôi</h2>
-        <p class="section-subtitle fade-in visible">
-          Cùng trao đổi để xây dựng trải nghiệm số đẳng cấp cho đội ngũ của bạn.
-        </p>
-        <div class="contact-content">
-          <div class="contact-info fade-in visible">
-            <h3>Hãy kết nối với tôi</h3>
-            <p>
-              Tôi luôn sẵn sàng thảo luận về các dự án mới, ý tưởng sáng tạo
-              hoặc cơ hội hợp tác. Hãy liên hệ và chúng ta sẽ tạo ra điều gì đó
-              tuyệt vời cùng nhau!
-            </p>
-
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <p>
-                  <a
-                    href="/cdn-cgi/l/email-protection#f299c0c2dc9c9b9ab2959f939b9edc919d9f"
-                    ><span
-                      class="__cf_email__"
-                      data-cfemail="a7cc959789c9cecfe7c0cac6cecb89c4c8ca"
-                      >[email&#160;protected]</span
-                    ></a
-                  >
-                </p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>Điện thoại</h4>
-                <p>1900100 có</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Địa chỉ</h4>
-                <p>Hải Phòng, Việt Nam</p>
-              </div>
-            </div>
-          </div>
-
-          <form class="contact-form fade-in visible">
-            <div class="form-group">
-              <label for="name">Họ và tên</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Chủ đề</label>
-              <input type="text" id="subject" name="subject" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Nội dung</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="scroll-reveal">
-      <div class="footer-content">
-        <p>&copy; 2026 TrungTiger. Đam Mê Bất Tận</p>
-        <div class="footer-social">
-  <p class="social-icons">
-            <a
-              href="https://githucb.com/hksdtp"
-              target="_blank"
-              aria-label="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.faceccbook.com/nih.dev/"
-              target="_blank"
-              aria-label="Facebook"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="https://t.me/nccihdev0" target="_blank" aria-label="Telegram"
-              ><i class="fab fa-telegram"></i
-            ></a>
-            <a href="https://zalo.mcce/0989960304" target="_blank" aria-label="Zalo"
-              ><i class="fas fa-comment-dots"></i
-            ></a>
-              </p>
-        </div>
-      </div>
-    </footer>
-
-   <script>
-        document.addEventListener("DOMContentLoaded", function () {
-  // Tạo bộ cấu hình rình sự kiện cuộn màn hình
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      // Khi phần tử lọt vào màn hình hiển thị
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active"); // Thêm class để kích hoạt CSS bay lên
-      }
-    });
-  }, {
-    threshold: 0.15 // Hiện khoảng 15% phần tử là hiệu ứng bắt đầu chạy luôn
-  });
-
-  // Tìm tất cả các dòng code, các thẻ có class là .scroll-reveal để theo dõi
-  const elements = document.querySelectorAll(".scroll-reveal");
-  elements.forEach((el) => observer.observe(el));
-});
-      </script>
-
-      <!-- Khi load lại trang web sẽ tự nhảy về đầu -->
-      <script>
-  // Chạy code ngay khi trang vừa tải xong
-  window.addEventListener('DOMContentLoaded', () => {
-    // Tắt tính năng tự lưu vị trí cuộn của trình duyệt
-    if ('scrollRestoration' in history) {
-      history.scrollRestoration = 'manual';
-    }
-    // Cuộn trang về góc trên cùng bên trái (tọa độ 0,0)
-    window.scrollTo(0, 0);
-  });
-</script>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // === 1. ĐOẠN CODE HIỆU ỨNG CUỘN MÀN HÌNH (SCROLL REVEAL) ===
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("active");
+        volumeIcon.addEventListener('click', () => {
+            if (audio.volume > 0) {
+                volumeSlider.dataset.prevVolume = audio.volume;
+                audio.volume = 0; volumeSlider.value = 0; volumeIcon.innerText = "🔇";
+            } else {
+                let prevVol = volumeSlider.dataset.prevVolume || 0.8;
+                audio.volume = prevVol; volumeSlider.value = prevVol;
+                volumeIcon.innerText = prevVol < 0.4 ? "🔈" : "🔊";
             }
         });
-    }, {
-        threshold: 0.15
-    });
+    </script>
+    <!-- ======================================================== -->
+   
+   
+   
+   
+   
+   
+   
+    <div class="icon-row">
 
-    const elements = document.querySelectorAll(".scroll-reveal");
-    elements.forEach((el) => observer.observe(el));
+    <a href="https://www.facebook.com/conixx1.Trung" target="_blank" class="icon-item">
+        <i class="fa-brands fa-facebook" style="color: #26A5E4;"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@trungguitarist" target="_blank" class="icon-item">
+        <i class="fa-brands fa-tiktok" style="color: #FFFFFF;"></i>
+    </a>
+
+    <a href="https://www.youtube.com/@Lienquanmobile736" target="_blank" class="icon-item">
+        <i class="fa-brands fa-youtube" style="color: #FF0000;"></i>
+    </a>
+</div>
 
 
-    // === 2. ĐOẠN CODE XỬ LÝ NÚT MENU MOBILE ===
-    const mobileMenuBtn = document.getElementById("mobile-menu");
-    const navMenu = document.getElementById("navMenu");
+<!--
+        <div id="download-section" class="download-card">
+            <div class="download-item">
+                <h4>Chưa Code lại loading...</h4>
+                <a href="https:e-shadowrocket" target="_blank" class="dl-btn"><i class="fa-solid fa-rocket"></i></a>
+            </div>
+            <div class="download-item">
+                <h4>Chưa Code lại loading...</h4>
+                <a href="https://cket-free" target="_blank" class="dl-btn"><i class="fa-solid fa-heart"></i></a>
+            </div>
+            <div class="download-item">
+                <h4>Chưa Code lại loading...</h4>
+                <a href="https://linom/go/Ya8McJv" target="_blank" class="dl-btn"><i class="fa-solid fa-download"></i></a>
+            </div>   
 
-    if (mobileMenuBtn && navMenu) {
-        mobileMenuBtn.addEventListener("click", function (e) {
-            e.preventDefault();
-            navMenu.classList.toggle("active");
-        });
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 25px;"> 
 
-        // Tự động đóng menu khi bấm vào một mục liên kết (Đã sửa lỗi cú pháp)
-        const navLinks = document.querySelectorAll(".nav-links a");
-        navLinks.forEach(link => {
-            link.addEventListener("click", function () {
-                navMenu.classList.remove("active");
-            });
-        });
+            <div class="download-item">
+                <h4>Chưa Code lại loading...</h4>
+                <a href="https://github.com/dns-khoindvn/oci-auto-vm/releases/download/DNS/khoindvn.mobileconfig" target="_blank" class="dl-btn"><i class="fa-solid fa-globe"></i></a>
+            </div>
+
+            <div class="download-item">
+                <h4>Chưa Code lại loading...</h4>
+                <a href="blachtml" class="dl-btn"><i class="fa-solid fa-circle-exclamation"></i></a>
+            </div>
+
+            <div class="download-item">
+                <h4>Chưa Code lại loading.......................................</h4>
+                <a href="https://l/go/D72wN" target="_blank" class="dl-btn"><i class="fa-solid fa-file"></i></a>
+            </div>
+
+        </div>  
+
+    <div id="esign-section" class="app-section">
+            <div class="header" style="padding-top: 0;">
+
+                <div class="name" style="font-size: 26px;">KHO ỨNG DỤNG <i class="fa-solid fa-box-open"></i></div>
+                <p style="color: var(--text-gray); font-size: 13px; margin-top: 5px;">Chưa thể dùng ❌</p>
+            </div>
+
+            <div class="tab-switcher">
+                <button class="tab-btn active" onclick="switchTab(event, 'ksign-list')">Esign</button>
+                <button class="tab-btn" onclick="switchTab(event, 'esign-list')">Cert</button>
+            </div>
+
+            <div id="ksign-list" class="tab-pane" style="display: block;">
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign<i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></p><p>Aramco Services Company</p></div>
+                    <a href="https://link4m.com/X78g2I" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign</p><p>Beijing Zhizhangyi Inc.</p></div>
+                    <a href="https://link4m.com/wdl0h" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign</p><p>XL AXIATA, PT TBK</p></div>
+                    <a href="https://link4m.com/FGUMkz" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign</p><p>Qingdao Rural Commercial Bank Co., Ltd</p></div>
+                    <a href="https://link4m.net/3AwkUH" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign</p><p>PowerChina International Group Limited</p></div>
+                    <a href="https://link4m.net/BLnArYHK" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign v1</p><p>PowerChina International Group Limited</p></div>
+                    <a href="https://link4m.com/u0gAfD" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign</p><p>BOC International (China) Limited</p></div>
+                    <a href="https://link4m.net/4XYthqyO" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>ESign</p><p>GLOBAL TAKEOFF, INC</p></div>
+                    <a href="https://link4m.net/O6Iec" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+            </div>
+
+            <div id="esign-list" class="tab-pane" style="display: none;">
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign<i class="fa-solid fa-circle-check" style="color: var(--blue-tick);"></i></p><p>Aramco Services Company</p></div>
+                    <a href="https://link4m.net/WvFaz" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign</p><p>Beijing Zhizhangyi Inc.</p></div>
+                    <a href="https://link4m.com/lpeHQ9" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign</p><p>XL AXIATA, PT TBK</p></div>
+                    <a href="https://link4m.net/lgCbw" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign</p><p>Qingdao Rural Commercial Bank Co., Ltd</p></div>
+                    <a href="https://link4m.net/t1ZN5Abj" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign</p><p>PowerChina International Group Limited</p></div>
+                    <a href="https://link4m.net/g8dlb" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign v1</p><p>PowerChina International Group Limited</p></div>
+                    <a href="https://link4m.com/UNlBtXj" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign</p><p>BOC International (China) Limited</p></div>
+                    <a href="https://link4m.net/gzvP4aef" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+                <div class="app-item">
+                    <img src="images/a1.webp" class="app-logo">
+                    <div class="app-details"><p>Cert Esign</p><p>GLOBAL TAKEOFF, INC</p></div>
+                    <a href="https://link4m.com/nXB1R3" target="_blank" class="btn-install">INSTALL</a>
+                </div>
+            </div>
+            <div class="signed-header">
+</div>
+<div id="ksign-section" class="app-section">
+    <h2 style="color: rgb(203, 26, 26); text-align: center; margin-bottom: 15px;">KSign Apps</h2>
+    <div class="cert-info">
+    <i class="fas fa-check-circle"></i> 
+    <span>Chưa thể dùng ❌</span>
+</div>
+
+  <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign1</p>
+        <p class="update-text">VIETNAM AIRLINES JSC</p>
+    </div>
+    <a href="https://api.khoindvn.io.vn/eQDb5c" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+
+    <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign2</p>
+        <p class="update-text">Beijing Zhizhangyi Inc.</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+    
+    <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign3</p>
+        <p class="update-text">XL AXIATA, PT TBK</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+     <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign4</p>
+        <p class="update-text">National Oilwell Varco, Inc.</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+     <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign5</p>
+        <p class="update-text">VIETNAM AIRLINES JSC</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+    <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign6</p>
+        <p class="update-text">PowerChina International Group Limited</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+    <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign7</p>
+        <p class="update-text">Luoyang Postal Administration</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+    <div class="app-item">
+    <img src="images/a1.webp" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign8</p>
+        <p class="update-text">Commission on Elections</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+
+    <div class="app-item">
+    <img src="images/a4.jpg" class="app-logo">
+    <div class="app-details">
+        <p class="app-name">KSign9</p>
+        <p class="update-text">CHIBA INSTITUTE OF TECHNOLOGY</p>
+    </div>
+    <a href="https://khoindvn.io.vn/" target="_blank" class="btn-install">INSTALL</a>
+    </div>
+-->
+    
+    </div>
+        <div id="skill-section" class="skill-item">
+    <h2>Skills</h2>
+
+    <div class="skill-item">
+        <p>HTML/CSS</p>
+        <div class="progress-bar">
+            <div class="progress html-css"></div>
+        </div>
+    </div>
+
+    <div class="skill-item">
+        <p>Lua</p>
+        <div class="progress-bar">
+            <div class="progress lua"></div>
+        </div>
+    </div>
+
+    <div class="skill-item">
+        <p>PHP</p>
+        <div class="progress-bar">
+            <div class="progress php"></div>
+        </div>
+    </div>
+
+    <div class="skill-item">
+        <p>MySQL</p>
+        <div class="progress-bar">
+            <div class="progress mysql"></div>
+        </div>
+    </div>
+</div>
+<div class="terms-link-container">
+    <a href="dieukhoan.html" class="terms-link"><strong>| Thỏa thuận người dùng |</strong></a>
+</div>
+    
+    <div class="disclaimer-container">
+    <p class="disclaimer-title">MIỄN TRỪ TRÁCH NHIỆM</p>
+    <div class="disclaimer-box">
+        <p>
+            <span class="important-note">Lưu ý:</span> Website này chỉ cung cấp thông tin và ứng dụng cho nhu cầu tìm hiểu, giáo dục cá nhân. Chúng tôi <strong>KHÔNG</strong> khuyến khích hay cổ xúy bất kỳ hành động vi phạm quyền sở hữu trí tuệ nào. Người dùng cần tự ý thức và chịu trách nhiệm trước pháp luật về các vấn đề bản quyền hoặc tổn thất có thể xảy ra khi tải xuống. Mọi hành vi và mục đích sử dụng từ phía bạn nằm ngoài phạm vi trách nhiệm của chúng tôi.
+    </div>
+</div>
+
+        <p class="footer-text">© 2026 Trung IOS - Mọi Quyền Được Bảo Lưu </p>
+    </div>
+
+    <script>
+        function searchApp() {
+    let input = document.getElementById('ipaSearch').value.toLowerCase();
+    let apps = document.getElementById('ipaList').getElementsByClassName('app-item');
+
+    for (let i = 0; i < apps.length; i++) {
+        let name = apps[i].getElementsByClassName('app-name')[0].innerText.toLowerCase();
+        if (name.includes(input)) {
+            apps[i].style.display = "flex";
+        } else {
+            apps[i].style.display = "none";
+        }
     }
-});
+}
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Đóng menu nếu bấm ra ngoài vùng menu
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-toggle') && !event.target.matches('.fa-bars')) {
+                var dropdowns = document.getElementsByClassName("nav-links");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('active')) {
+                        openDropdown.classList.remove('active');
+                    }
+                }
+            }
+        }
+        function switchTab(evt, tabId) {
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.style.display = 'none');
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabId).style.display = 'block';
+            evt.currentTarget.classList.add('active');
+        }
+    </script>
+    </script>   
+<script type="text/javascript">
+    var link4m_url = 'https://link4m.co/';
+    var link4m_api_token = '6538fc2501b1310cc122d459'; 
+    var link4m_advert = 2;
+    var link4m_domains = ['github.com', 'raw.githubusercontent.com', 'api.khoindvn.io.vn']; 
 </script>
-
-<script>
-  // Chạy code ngay khi trang bắt đầu tải lại
-  window.location.hash = ""; // Xóa các ký tự # trên URL nếu có
-  
-  if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual'; // Tắt tính năng tự nhớ vị trí cuộn của trình duyệt
-  }
-
-  window.addEventListener('beforeunload', function () {
-    window.scrollTo(0, 0); // Cuộn về đầu trang trước khi load
-  });
-</script>
-<link rel="stylesheet" href="/script.js">
-
-      
+<script src="https://link4m.co/js/full-script.js"></script>     
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"cca6de26b62346238237dc09408d339c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"cca6de26b62346238237dc09408d339c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>

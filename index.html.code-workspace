@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../Pictures/anh"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Trungios",
+		"liveServer.settings.port": 5501
+	}
+}
